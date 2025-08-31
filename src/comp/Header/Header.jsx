@@ -1,6 +1,6 @@
-import jnuLogo from "../../constant/img/jnulogo.png";
-import atomLogo from "../../constant/img/atomlogo.png";
-import drdoLogo from "../../constant/img/drdologo.png";
+import jnuLogo from "../../constant/img/jnuLogo.png";
+import atomLogo from "../../constant/img/atomLogo.png";
+import drdoLogo from "../../constant/img/drdoLogo.png";
 import Navbar from "../NavBar/Navbar";
 
 
