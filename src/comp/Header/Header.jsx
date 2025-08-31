@@ -1,7 +1,8 @@
 import jnuLogo from "../../constant/img/jnulogo.png";
-import atomLogo from "../../constant/img/atomLogo.png";
-import drdoLogo from "../../constant/img/drdoLogo.png";
+import atomLogo from "../../constant/img/atomlogo.png";
+import drdoLogo from "../../constant/img/drdologo.png";
 import Navbar from "../NavBar/Navbar";
+
 
 const Header = () => {
   return (
