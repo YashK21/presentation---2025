@@ -13,7 +13,7 @@ const Contact = () => {
           {/* Google Map Embed */}
           <div className="w-full h-80 md:h-[400px] shadow-lg rounded-xl overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.343537847432!2d77.16664687549886!3d28.540157075726857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1f56d1ef3d7%3A0xc6c8fae0c3f6f2e1!2sJawaharlal%20Nehru%20University!5e0!3m2!1sen!2sin!4v1707222222222!5m2!1sen!2sin"
+              src="https://maps.app.goo.gl/BS6JgmDLtvb1wzbq5?g_st=aw"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -33,7 +33,7 @@ const Contact = () => {
               <span className="font-medium">Convener, ICRANN-2025</span>
             </p>
             <p className="text-gray-700 mb-2">
-              School of Physical Sciences, <br />
+              Special Centre for Nanoscience, <br />
               Jawaharlal Nehru University, <br />
               New Delhi, India
             </p>

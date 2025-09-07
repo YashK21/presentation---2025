@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-blue-400 text-white w-full">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between md:justify-center px-4 py-3">
         {/* Left Logo / Home */}
-        <Link to="#" className="block md:hidden font-semibold text-lg">
+        <Link to="/" className="block md:hidden font-semibold text-lg">
           HOME
         </Link>
 

@@ -1,5 +1,5 @@
 import banner from "../../constant/img/banner.png";
-import { facultyData,registrationFee,impDates } from "../../constant/data";
+import { facultyData, registrationFee, impDates } from "../../constant/data";
 const Main = () => {
   return (
     <div className="flex flex-col items-center w-full">
@@ -30,21 +30,24 @@ const Main = () => {
       <div className="w-full md:w-[90%] bg-yellow-100 mt-10 p-6 rounded-lg shadow flex flex-col md:flex-row items-center gap-6">
         <div className="flex-1">
           <p className="text-gray-800 italic text-sm md:text-base leading-relaxed">
-            “I am very pleased to highlight the importance of the IAMNOP
-            conference with a wide-ranging agenda and applications to major
-            scientific areas. These include astronomy and astrophysics, nuclear
-            fusion energy, nanomaterials, nanomedicine, environment and climate
-            sciences, and other fields...”
+            “On behalf of the Special Centre for Nanosciences, it is my great
+            pleasure to welcome you to the International Conference on Recent
+            Advancements in Nanoscience and Nanotechnology-2025 (ICRANN-2025).
+            This conference serves as a dynamic platform for the brightest minds
+            to converge, share groundbreaking research, and collectively shape
+            the future of nanoscience. We are proud to host this dialogue and
+            look forward to the innovations that will emerge.”
           </p>
           <p className="mt-3 font-semibold text-gray-900 text-sm md:text-base">
-            ~ Prof. Anil K. Pradhan, The Ohio State University, USA
+            ~ Prof. Dr. Bijoy Kumar Kuanr, Head of Department, Special Centre
+            for Nanosciences, Jawaharlal Nehru University
           </p>
         </div>
-        <img
+        {/* <img
           src="https://via.placeholder.com/120"
           alt="Prof"
           className="rounded-lg w-28 h-28 object-cover"
-        />
+        /> */}
       </div>
 
       {/* ===== Announcements Section ===== */}
@@ -97,91 +100,117 @@ const Main = () => {
         </div>
       </div>
 
-     {/* ===== Important Dates ===== */}
-<div className="w-full md:w-[90%] px-4 py-10">
-  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-    📅 Important Dates
-  </h2>
-  <div className="overflow-x-auto shadow-lg rounded-lg">
-    <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
-      <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-        <tr>
-          <th className="px-4 md:px-6 py-3 text-left">Event</th>
-          <th className="px-4 md:px-6 py-3 text-center">Date</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-gray-200">
-        {impDates.map((item, idx) => (
-          <tr
-            key={idx}
-            className="hover:bg-gray-50 transition duration-200 ease-in-out"
-          >
-            <td className="px-4 md:px-6 py-3 text-gray-700">{item.event}</td>
-            <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-              {item.date}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</div>
-
-{/* ===== Registration Fee ===== */}
-<div className="w-full md:w-[90%] px-4 py-10">
-  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-    💰 Registration Fee
-  </h2>
-  <div className="overflow-x-auto shadow-lg rounded-lg">
-    <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
-      <thead className="bg-gradient-to-r from-red-600 to-pink-600 text-white">
-        <tr>
-          <th className="px-4 md:px-6 py-3 text-left">Category</th>
-          <th className="px-4 md:px-6 py-3 text-center">By Oct 15, 2025</th>
-          <th className="px-4 md:px-6 py-3 text-center">After Oct 15, 2025</th>
-        </tr>
-      </thead>
-      <tbody className="divide-y divide-gray-200">
-        {registrationFee.map((row, idx) => (
-          <tr
-            key={idx}
-            className="hover:bg-gray-50 transition duration-200 ease-in-out"
-          >
-            <td className="px-4 md:px-6 py-3 text-gray-700">{row.category}</td>
-            <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-              {row.early}
-            </td>
-            <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-              {row.late}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</div>
-
-      {/* ===== Committee Section ===== */}
+      {/* ===== Important Dates ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
-        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-          Organizing Committee
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          📅 Important Dates
         </h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {facultyData.map((member, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center text-center bg-white shadow p-4 rounded-lg hover:shadow-lg transition-shadow"
-            >
-              <div className="w-20 h-20 md:w-24 md:h-24 bg-gray-200 rounded-full mb-3"></div>
-              <h3 className="font-semibold text-gray-800 text-sm md:text-base">
-                {member.name}
-              </h3>
-              <p className="text-xs md:text-sm text-gray-600">{member.role}</p>
-            </div>
-          ))}
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Event</th>
+                <th className="px-4 md:px-6 py-3 text-center">Date</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {impDates.map((item, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.event}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {item.date}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
+
+      {/* ===== Registration Fee ===== */}
+      <div className="w-full md:w-[90%] px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          💰 Registration Fee
+        </h2>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-red-600 to-pink-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Category</th>
+                <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
+                <th className="px-4 md:px-6 py-3 text-center">
+                  International (USD)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {registrationFee.map((row, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {row.category}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {row.Indian}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {row.International}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* ===== Committee Section ===== */}
+      <section className="py-10 px-4 md:px-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          {/* Heading */}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10 text-center">
+            Organizing Committee
+          </h2>
+
+          {/* Faculty Roles */}
+          <div className="space-y-12">
+            {facultyData.map((group, idx) => (
+              <div key={idx}>
+                {/* Role Heading */}
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-700 mb-6 text-center">
+                  {group.role}
+                </h3>
+
+                {/* Members Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                  {group.members.map((member, mIdx) => (
+                    <div
+                      key={mIdx}
+                      className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center"
+                    >
+                      {/* Avatar Placeholder */}
+                      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full bg-gradient-to-r from-blue-300 to-indigo-400 flex items-center justify-center text-white font-bold text-xl">
+                        {member.name.split(" ")[1]?.[0] || member.name[0]}
+                      </div>
+
+                      {/* Member Info */}
+                      <h4 className="text-lg font-semibold text-gray-800">
+                        {member.name}
+                      </h4>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

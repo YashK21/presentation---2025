@@ -22,72 +22,105 @@ export const data = [
   },
 ];
 export const facultyData = [
-  { name: "Prof. Santishree Dhulipudi Pandit", role: "Patron" },
-  { name: "Prof. Brajesh Kumar Pandey", role: "Co-Patron" },
-  { name: "Prof. Sobhan Sen", role: "Chairperson" },
-  { name: "Prof. Man Mohan", role: "President" },
-  { name: "Prof. Frank B. Rosmej", role: "Chief Advisor" },
-  { name: "Dr. Alok Kumar Singh Jha", role: "Convener" },
-  { name: "Prof. Pawan Kumar Kulriya", role: "Co-Convener" },
-  { name: "Dr. Ram Prasad Prajapati", role: "Co-Convener" },
-  { name: "Dr. Shilpi Agarwal", role: "Secretary" },
+  {
+    role: "Patron",
+    members: [
+      { name: "Hon. VC Prof. S Dhulipudi Pandit, JNU" },
+    ],
+  },
+  {
+    role: "Co-Patrons",
+    members: [
+      { name: "Prof. Brajesh Kumar Pandey (Rector-I), JNU" },
+      { name: "Prof. Dipendra Nath Das (Rector-II), JNU" },
+    ],
+  },
+  {
+    role: "Chair",
+    members: [
+      { name: "Prof. Bijoy Kumar Kuanr, SCNS, JNU" },
+    ],
+  },
+  {
+    role: "Organizing Secretaries",
+    members: [
+      { name: "Dr. Prakash Kanoo, SCNS, JNU" },
+      { name: "Dr. Sandeep Kumar, SCNS, JNU" },
+      { name: "Dr. Balaji Birajdar, SCNS, JNU" },
+      { name: "Dr. Pratima Solanki, SCNS, JNU" },
+      { name: "Dr. Tulika Prasad, SCNS, JNU" },
+      { name: "Dr. Vinod Kumar, SCNS, JNU" },
+      { name: "Dr. Neha Paras, SCNS, JNU" },
+    ],
+  },
+  {
+    role: "Conveners",
+    members: [
+      { name: "Prof. Satyendra Singh, SCNS, JNU" },
+      { name: "Dr. Pankaj Thakur, SCNS, JNU" },
+    ],
+  },
+  {
+    role: "Treasurer",
+    members: [
+      { name: "Dr. Pankaj Thakur, SCNS, JNU" },
+      { name: "Dr. Prakash Kanoo, SCNS, JNU" },
+    ],
+  },
 ];
+
 export const impDates = [
   { event: "Paper Submission Starts", date: "1st September 2025" },
   { event: "Paper Submission Deadline", date: "12th October 2025" },
   { event: "Notification of Paper Acceptance", date: "10th November 2025" },
   { event: "Camera Ready Submission Deadline", date: "25th November 2025" },
-  { event: "Last Date of Early Bird Registration", date: "30th November 2025" },
+  { event: "Last Date of Indian Bird Registration", date: "30th November 2025" },
   { event: "Last Date of Registration", date: "5th December 2025" },
   { event: "Conference Dates", date: "20th-21st December 2025" },
 ];
 
 export const registrationFee = [
-  { category: "International Delegate", early: "US$ 500", late: "US$ 600" },
-  { category: "International Student", early: "US$ 400", late: "US$ 450" },
-  { category: "Indian Delegate", early: "₹6000", late: "₹7000" },
-  { category: "Indian Student", early: "₹4000", late: "₹4500" },
+  { category: "Students/Research Scholars",Indian:  "₹4000", International: "US$ 200" },
+  { category: "Faculty from Academics", Indian:  "₹5000", International: "US$ 250" },
+  { category: "Delegates from Industry", Indian:  "₹10000", International: "US$ 400" },
+  { category: "Co-author/Attendee", Indian: "₹3000", International:"US$ 100" },
 ];
 export const speakers = [
   {
-    name: "Dr. V Veerakumar",
-    designation: "Minnesota, USA",
+    name: "Prof. T. S. KalKur",
+    designation: "University of Colorado, Colorado, USA",
   },
   {
-    name: "Dr. Sushil Kumar Pandey",
-    designation: "NIT Karnataka, Surathkal",
+    name: "Prof. Ajit Khosla",
+    designation: "China and Yamagata University, Japan",
   },
   {
-    name: "Professor Nagendra Kaushik",
-    designation: "Kwangwoon University, Seoul, South Korea",
+    name: "Prof. Sameer Rahatekar",
+    designation: "Cranfield, UK",
   },
   {
-    name: "Dr. Rakesh Kumar Tiwari",
-    designation: "Western University of Health Sciences, Lebanon, OR, USA",
-  },
-  {
-    name: "Prof. Prashant Mishra",
-    designation: "Indian Institute of Technology (IIT) Delhi",
+    name: "Dr. Goutam Dalapati",
+    designation: "Hyden, Singapore",
   },
   {
     name: "Prof. Suman K. Dhar",
-    designation: "Vice Chancellor, TERI School of Advanced Studies & Professor, JNU",
+    designation: "Vice Chancellor, TERI",
   },
   {
-    name: "Dr. Asmita Das",
-    designation: "Delhi Technological University, Delhi",
+    name: "Dr. Dinesh Pathak",
+    designation: "UWI, West Indies",
   },
   {
-    name: "Prof. Promod K. Mehta",
-    designation: "SGT University, Gurugram",
+    name: "Dr. V. Veerakumar",
+    designation: "Minnesota, USA",
   },
   {
-    name: "Dr. Subhash Chandra Yadav",
-    designation: "AIIMS, New Delhi",
+    name: "Prof. Vijay Kumar Thakur",
+    designation: "SRUC, UK",
   },
   {
-    name: "Prof. Prakash Mondal",
-    designation: "IIT Kanpur, Uttar Pradesh",
+    name: "Dr. Zainul Aadbin",
+    designation: "IMRE, A*STAR, Singapore",
   },
   {
     name: "Dr. Adish Tyagi",
@@ -98,28 +131,21 @@ export const speakers = [
     designation: "IMDEA Energy Institute, Madrid, Spain",
   },
   {
+    name: "Dr. Anup Kumar",
+    designation: "Trinity College, Ireland",
+  },
+  {
     name: "Prof. Rajan Patel",
-    designation: "Jamia Millia Islamia, New Delhi",
+    designation: "Director, Interdisciplinary Research, JMI, New Delhi",
   },
   {
-    name: "Dr. Prabhat Chaudhuary",
+    name: "Dr. Prabhat Chaudhary",
     designation: "AIIMS, New Delhi",
   },
   {
-    name: "Dr. Kunal Dhingra",
-    designation: "AIIMS, New Delhi",
-  },
-  {
-    name: "Dr. Vijay Kumar Thakur",
-    designation: "SRUC, Scotland",
-  },
-  {
-    name: "Dr. Pankaj Chouhan",
-    designation: "IIT Jammu",
-  },
-  {
-    name: "Dr. Dinesh Pathak",
-    designation: "University of the West Indies, St. Augustine",
+    name: "Prof. Prashant Singh",
+    designation:
+      "Department of Chemistry, Atma Ram Sanatan Dharm College, University of Delhi",
   },
 ];
 

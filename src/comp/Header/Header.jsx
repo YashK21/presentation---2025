@@ -27,7 +27,7 @@ const Header = () => {
             (ICRANN-2025)
           </p>
           <p className="text-sm lg:text-base font-normal mt-2">
-            Organized by: School of Physical Sciences, Jawaharlal Nehru
+            Organized by: Special Centre for Nanoscience, Jawaharlal Nehru
             University,
             <br /> New Delhi-110067, India.
             <br />
