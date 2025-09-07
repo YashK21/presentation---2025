@@ -1,6 +1,5 @@
 import jnuLogo from "../../constant/img/jnuLogo.png";
-import atomLogo from "../../constant/img/atomLogo.png";
-import drdoLogo from "../../constant/img/drdoLogo.png";
+import nanoTechLogo from "../../constant/img/nano tech.png";
 import Navbar from "../NavBar/Navbar";
 
 
@@ -14,45 +13,35 @@ const Header = () => {
         <img
           src={jnuLogo}
           alt="JNU Logo"
-          className="h-24 w-32 lg:h-36 lg:w-44 object-contain"
+          className="h-24 w-32 lg:h-36 lg:w-44 object-contain mix-blend-darken"
         />
 
         {/* Conference Info */}
         <div className="flex flex-col text-center text-white font-bold">
           <p className="text-lg lg:text-2xl">
-            The International Conference on Atomic, Molecular,
+            3rd International Conference on Recent Advances in 
           </p>
           <p className="text-lg lg:text-2xl">
-            Nano and Optical Physics with Applications
+            Nanoscience and Nanotechnology-2025 
             <br />
-            (IAMNOP-2025)
+            (ICRANN-2025)
           </p>
           <p className="text-sm lg:text-base font-normal mt-2">
             Organized by: School of Physical Sciences, Jawaharlal Nehru
             University,
             <br /> New Delhi-110067, India.
             <br />
-            December 17th-19th, 2025
+            December 20-21, 2025
           </p>
         </div>
 
         {/* Atom Logo */}
         <img
-          src={atomLogo}
+          src={nanoTechLogo}
           alt="Atom Logo"
-          className="h-24 w-32 lg:h-36 lg:w-44 object-contain"
+          className="h-24 w-32 lg:h-36 lg:w-44 object-contain mix-blend-multiply"
         />
 
-        {/* DRDO Logo + Text */}
-        <div className="flex flex-col items-center text-white lg:text-black">
-          <img
-            src={drdoLogo}
-            alt="DRDO Logo"
-            className="h-20 w-28 lg:h-32 lg:w-40 object-contain"
-          />
-          <p className="text-sm lg:text-base">Co-sponsored by</p>
-          <p className="text-sm lg:text-base font-semibold">DRDO</p>
-        </div>
       </div>
 
       {/* Navbar */}

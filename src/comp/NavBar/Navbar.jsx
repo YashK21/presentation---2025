@@ -1,18 +1,18 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="bg-blue-400 text-white w-full">
-<div className="max-w-screen-xl mx-auto flex items-center justify-between md:justify-center px-4 py-3">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between md:justify-center px-4 py-3">
         {/* Left Logo / Home */}
-        <a href="#" className="block md:hidden font-semibold text-lg">
+        <Link to="#" className="block md:hidden font-semibold text-lg">
           HOME
-        </a>
+        </Link>
 
-        {/* Right Menu Button (Mobile) */}
-        <button
+        {/* Right Menu Link (Mobile) */}
+        <Link
           className="flex space-x-2 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -30,55 +30,78 @@ const Navbar = () => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-        </button>
+        </Link>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-medium">
           <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link to="/" className="hover:text-yellow-300 cursor-pointer">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link
+              to="conference"
+              className="hover:text-yellow-300 cursor-pointer"
+            >
               Conference
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link
+              to="committee"
+              className="hover:text-yellow-300 cursor-pointer"
+            >
               Committee
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link to="speaker" className="hover:text-yellow-300 cursor-pointer">
               Speakers
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
-              Registration
-            </a>
+            <Link
+              to="/registration"
+              className="hover:text-yellow-300 cursor-pointer"
+            >
+              Registration{" "}
+              <sup
+                class="font-features sups"
+                style={{
+                  color: "red",
+                }}
+              >
+                New
+              </sup>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
-              Abstract
-            </a>
+            <Link
+              to="/abstract"
+              className="hover:text-yellow-300 cursor-pointer"
+            >
+              Abstract{" "}
+              <sup
+                class="font-features sups"
+                style={{
+                  color: "red",
+                }}
+              >
+                New
+              </sup>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-yellow-300">
-              Tours and Travel
-            </a>
+            <Link to="/scns" className="hover:text-yellow-300 cursor-pointer">
+              SCNS
+            </Link>
           </li>
 
           <li>
-            <a href="#" className="hover:text-yellow-300">
-              Hotel Rates
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link to="contact" className="hover:text-yellow-300 cursor-pointer">
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -88,29 +111,44 @@ const Navbar = () => {
         <div className="md:hidden bg-blue-400">
           <ul className="flex flex-col space-y-2 px-4 py-3">
             <li>
-              <a href="#" className="block hover:text-yellow-300">
+              <Link
+                to="/scns"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block hover:text-yellow-300">
+              <Link
+                to="/conference"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
                 Conference
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block hover:text-yellow-300">
+              <Link
+                to="speaker"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
                 Speakers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block hover:text-yellow-300">
+              <Link
+                to="/registration"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
                 Registration
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block hover:text-yellow-300">
+              <Link
+                to="/contact"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
