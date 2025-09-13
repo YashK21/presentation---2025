@@ -97,7 +97,7 @@ const Committee = () => {
       {/* ===== National Advisory Committee ===== */}
       <section>
         <h3 className="text-xl md:text-2xl font-semibold text-red-700 mb-4">
-          🇮🇳 National Advisory Committee (Tentative)
+          National Advisory Committee (Tentative)
         </h3>
         <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-sm md:text-base text-gray-700">
           {[

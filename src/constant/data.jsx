@@ -80,10 +80,10 @@ export const impDates = [
 ];
 
 export const registrationFee = [
-  { category: "Students/Research Scholars",Indian:  "₹4000", International: "US$ 200" },
-  { category: "Faculty from Academics", Indian:  "₹5000", International: "US$ 250" },
-  { category: "Delegates from Industry", Indian:  "₹10000", International: "US$ 400" },
-  { category: "Co-author/Attendee", Indian: "₹3000", International:"US$ 100" },
+  { category: "Students/Research Scholars",Indian:  "₹4000", International: "$200" },
+  { category: "Faculty from Academics", Indian:  "₹5000", International: "$250" },
+  { category: "Delegates from Industry", Indian:  "₹10000", International: "$400" },
+  { category: "Co-author/Attendee", Indian: "₹3000", International:"$100" },
 ];
 export const speakers = [
   {
@@ -142,10 +142,10 @@ export const speakers = [
     name: "Dr. Prabhat Chaudhary",
     designation: "AIIMS, New Delhi",
   },
-  {
-    name: "Prof. Prashant Singh",
-    designation:
-      "Department of Chemistry, Atma Ram Sanatan Dharm College, University of Delhi",
-  },
+  // {
+  //   name: "Prof. Prashant Singh",
+  //   designation:
+  //     "Department of Chemistry, Atma Ram Sanatan Dharm College, University of Delhi",
+  // },
 ];
 

@@ -1,6 +1,12 @@
 import banner from "../../constant/img/banner.png";
-import { facultyData, registrationFee, impDates } from "../../constant/data";
+import { facultyData } from "../../constant/data";
+import { useNavigate } from "react-router-dom";
 const Main = () => {
+  const navigate = useNavigate()
+  const handleNaivgate = () =>{
+    navigate("/registration")
+  }
+
   return (
     <div className="flex flex-col items-center w-full">
       {/* ===== Top Info & Register Button ===== */}
@@ -11,7 +17,7 @@ const Main = () => {
           <br className="hidden md:block" /> Dates for conference:{" "}
           <span className="font-semibold">December 20-21, 2025.</span>
         </p>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+        <button onClick={handleNaivgate} className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition cursor-pointer">
           Register Now
         </button>
       </div>
@@ -53,20 +59,20 @@ const Main = () => {
       {/* ===== Announcements Section ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-          Announcements
+          Announcements : ICRANN-2025 declares recognition in the categories
+          listed below
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>
-            Call for Registration & Abstract Submission is now open. Deadline:{" "}
-            <span className="font-semibold">15 September 2025</span>.
-          </li>
-          <li>Celebrating the 64th birth year of Prof. J. M. Rost</li>
+          <li>Award of Excellence in Nanoscience and Nanoelectronics</li>
           <li>Felicitation of Prof. Man Mohan, President IAMNOP</li>
+          <li>Innovation Award</li>
+          <li>Young Researcher Award</li>
+          <li>Best Oral and Poster Awards Call for Registration & Abstract</li>
         </ul>
       </div>
 
       {/* ===== Important Notifications ===== */}
-      <div className="w-full md:w-[90%] px-4 py-10">
+      {/* <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
           Important Notifications
         </h2>
@@ -98,77 +104,7 @@ const Main = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* ===== Important Dates ===== */}
-      <div className="w-full md:w-[90%] px-4 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-          📅 Important Dates
-        </h2>
-        <div className="overflow-x-auto shadow-lg rounded-lg">
-          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
-            <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-              <tr>
-                <th className="px-4 md:px-6 py-3 text-left">Event</th>
-                <th className="px-4 md:px-6 py-3 text-center">Date</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {impDates.map((item, idx) => (
-                <tr
-                  key={idx}
-                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
-                >
-                  <td className="px-4 md:px-6 py-3 text-gray-700">
-                    {item.event}
-                  </td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-                    {item.date}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* ===== Registration Fee ===== */}
-      <div className="w-full md:w-[90%] px-4 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-          💰 Registration Fee
-        </h2>
-        <div className="overflow-x-auto shadow-lg rounded-lg">
-          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
-            <thead className="bg-gradient-to-r from-red-600 to-pink-600 text-white">
-              <tr>
-                <th className="px-4 md:px-6 py-3 text-left">Category</th>
-                <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
-                <th className="px-4 md:px-6 py-3 text-center">
-                  International (USD)
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {registrationFee.map((row, idx) => (
-                <tr
-                  key={idx}
-                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
-                >
-                  <td className="px-4 md:px-6 py-3 text-gray-700">
-                    {row.category}
-                  </td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-                    {row.Indian}
-                  </td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-                    {row.International}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      </div> */}
 
       {/* ===== Committee Section ===== */}
       <section className="py-10 px-4 md:px-12 bg-gray-50">

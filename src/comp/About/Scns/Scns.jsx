@@ -9,7 +9,7 @@ const Scns = () => {
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 leading-relaxed text-gray-700 text-sm md:text-base">
           <p className="mb-4">
             The <span className="font-semibold">Special Centre for Nanoscience (SCNS)</span>, 
-            established in 2012, is an interdisciplinary research and teaching centre at 
+            established in 2014, is an interdisciplinary research and teaching centre at 
             <span className="font-semibold"> Jawaharlal Nehru University (JNU)</span>.
           </p>
           <p className="mb-4">

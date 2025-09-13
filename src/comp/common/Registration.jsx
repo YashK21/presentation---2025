@@ -1,10 +1,79 @@
+import {  registrationFee,impDates } from "../../constant/data";
 const Registration = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-600 mb-8">
         Registration Details
       </h1>
+  {/* ===== Registration Fee ===== */}
+      <div className="w-full md:w-[90%] px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+           Fee 💰
+        </h2>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-red-600 to-pink-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Category</th>
+                <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
+                <th className="px-4 md:px-6 py-3 text-center">
+                  International (USD)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {registrationFee.map((row, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {row.category}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {row.Indian}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {row.International}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+      {/* ===== Important Dates ===== */}
+      <div className="w-full md:w-[90%] px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          📅 Important Dates
+        </h2>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Event</th>
+                <th className="px-4 md:px-6 py-3 text-center">Date</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {impDates.map((item, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.event}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {item.date}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
       {/* Important Notes */}
       <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded-lg shadow-sm">
         <p className="text-gray-800 font-medium text-sm sm:text-base">

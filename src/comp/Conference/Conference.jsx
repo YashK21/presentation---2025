@@ -1,3 +1,4 @@
+
 const Conference = () => {
   return (
     <div className="w-full md:w-[90%] mx-auto px-4 py-10">
@@ -32,6 +33,8 @@ const Conference = () => {
           industry-academia linkages.
         </p>
       </section>
+
+
 
       {/* Objectives */}
       <section className="mb-8">
@@ -68,9 +71,7 @@ const Conference = () => {
             Enhanced global networking and long-term collaborations among
             researchers and industries.
           </li>
-          <li>
-            Exchange of cutting-edge knowledge and innovative ideas.
-          </li>
+          <li>Exchange of cutting-edge knowledge and innovative ideas.</li>
           <li>
             Identification of emerging research areas and industrial
             opportunities.
@@ -81,9 +82,7 @@ const Conference = () => {
           <li>
             Strengthened industry-academia linkages for technology transfer.
           </li>
-          <li>
-            Motivation and capacity building of young researchers.
-          </li>
+          <li>Motivation and capacity building of young researchers.</li>
         </ul>
       </section>
 
@@ -106,7 +105,7 @@ const Conference = () => {
         </ul>
       </section>
 
-      {/* Proposed Conference Themes */}
+    {/* Conference Themes */}
       <section>
         <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
           Proposed Conference Themes
@@ -116,15 +115,21 @@ const Conference = () => {
           <li>Magnetic Nanostructures/Nanoparticles and their applications</li>
           <li>Nanoelectronics, Spintronics, and Quantum Technologies</li>
           <li>DNA replication and cell cycle regulation</li>
-          <li>Clinical Nanobiotechnology, Biomedical Devices, and Bio-Nano-systems</li>
+          <li>
+            Clinical Nanobiotechnology, Biomedical Devices, and Bio-Nano-systems
+          </li>
           <li>Nanomedicine, Drug Delivery, and Theranostics</li>
           <li>Immunological properties-engineered nanomaterials</li>
           <li>Computational Modelling AI in Nano-bio science</li>
           <li>Nanotechnology for Energy Harvesting and Storage</li>
-          <li>Nanomaterials for Environmental Remediation and Sustainability</li>
+          <li>
+            Nanomaterials for Environmental Remediation and Sustainability
+          </li>
           <li>MEMS/NEMS and Nano-Enabled Smart Devices</li>
           <li>Nanofabrication and Nanomanufacturing Techniques</li>
-          <li>Advanced Characterization and In-situ Analysis of Nanostructures</li>
+          <li>
+            Advanced Characterization and In-situ Analysis of Nanostructures
+          </li>
           <li>Computational Nanoscience, Modeling, and AI in Nanotechnology</li>
           <li>Polymeric Nanocomposites and Hybrid Nanomaterials</li>
           <li>Nano-Enabled Sensors for IoT and Industrial Applications</li>
@@ -132,6 +137,21 @@ const Conference = () => {
           <li>Nanotechnology for Space, Defence, and Harsh Environment</li>
           <li>VLSI Circuits and Systems</li>
           <li>RF Circuit design/Analysis/Testing</li>
+        </ul>
+      </section>
+    <br/>
+        {/* Publications */}
+      <section>
+        <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+          Publications:
+        </h2>
+        <ul className="list-disc list-inside text-gray-700 text-sm md:text-base leading-relaxed space-y-2">
+          <li>
+            Outstanding contributions presented at the conference will have
+            publication opportunities in SCI/SCIE, Scopus and WoS indexed
+            journals along with the official ICRANN-2025 conference proceedings
+            with ISBN number
+          </li>
         </ul>
       </section>
     </div>
