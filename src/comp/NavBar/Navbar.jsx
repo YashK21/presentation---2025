@@ -142,6 +142,14 @@ const Navbar = () => {
                 Registration
               </Link>
             </li>
+             <li>
+              <Link
+                to="/abstract"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
+                Abstract
+              </Link>
+            </li>
             <li>
               <Link
                 to="/contact"
