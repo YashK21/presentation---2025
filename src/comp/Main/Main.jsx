@@ -2,10 +2,10 @@ import banner from "../../constant/img/banner.png";
 import { facultyData } from "../../constant/data";
 import { useNavigate } from "react-router-dom";
 const Main = () => {
-  const navigate = useNavigate()
-  const handleNaivgate = () =>{
-    navigate("/registration")
-  }
+  const navigate = useNavigate();
+  const handleNaivgate = () => {
+    navigate("/registration");
+  };
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -17,7 +17,10 @@ const Main = () => {
           <br className="hidden md:block" /> Dates for conference:{" "}
           <span className="font-semibold">December 20-21, 2025.</span>
         </p>
-        <button onClick={handleNaivgate} className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition cursor-pointer">
+        <button
+          onClick={handleNaivgate}
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition cursor-pointer"
+        >
           Register Now
         </button>
       </div>
@@ -45,7 +48,8 @@ const Main = () => {
             look forward to the innovations that will emerge.”
           </p>
           <p className="mt-3 font-semibold text-gray-900 text-sm md:text-base">
-             - Prof. Dr. Bijoy Kumar Kuanr, Chairperson, Special Centre for Nanosciences, Jawaharlal Nehru University
+            - Prof. Dr. Bijoy Kumar Kuanr, Chairperson, Special Centre for
+            Nanosciences, Jawaharlal Nehru University
           </p>
         </div>
         {/* <img
@@ -69,41 +73,6 @@ const Main = () => {
           <li>Best Oral and Poster Awards</li>
         </ul>
       </div>
-
-      {/* ===== Important Notifications ===== */}
-      {/* <div className="w-full md:w-[90%] px-4 py-10">
-        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-          Important Notifications
-        </h2>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-green-100 border-l-4 border-green-600 p-4 rounded-lg shadow">
-            <p className="text-gray-700">
-              Dates for conference:{" "}
-              <span className="font-semibold">December 17th-19th, 2025</span>
-            </p>
-          </div>
-          <div className="bg-green-100 border-l-4 border-green-600 p-4 rounded-lg shadow">
-            <p className="text-gray-700">
-              Abstract Submission Deadline:{" "}
-              <span className="font-semibold">15 September 2025</span>
-            </p>
-          </div>
-          <div className="bg-green-100 border-l-4 border-green-600 p-4 rounded-lg shadow">
-            <p className="text-gray-700">
-              Confirmation of abstract acceptance:{" "}
-              <span className="font-semibold">25 September 2025</span>
-            </p>
-          </div>
-          <div className="bg-green-100 border-l-4 border-green-600 p-4 rounded-lg shadow">
-            <p className="text-gray-700">
-              Registration Deadline:{" "}
-              <span className="font-semibold">
-                15 October (Regular), 30 October (Late)
-              </span>
-            </p>
-          </div>
-        </div>
-      </div> */}
 
       {/* ===== Committee Section ===== */}
       <section className="py-10 px-4 md:px-12 bg-gray-50">
@@ -129,10 +98,18 @@ const Main = () => {
                       key={mIdx}
                       className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center"
                     >
-                      {/* Avatar Placeholder */}
-                      <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full bg-gradient-to-r from-blue-300 to-indigo-400 flex items-center justify-center text-white font-bold text-xl">
-                        {member.name.split(" ")[1]?.[0] || member.name[0]}
-                      </div>
+                      {/* Avatar */}
+                      {member.src ? (
+                        <img
+                          src={member.src}
+                          alt={member.name}
+                          className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full object-cover shadow-md"
+                        />
+                      ) : (
+                        <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full bg-gradient-to-r from-blue-300 to-indigo-400 flex items-center justify-center text-white font-bold text-xl">
+                          {member.name.split(" ")[1]?.[0] || member.name[0]}
+                        </div>
+                      )}
 
                       {/* Member Info */}
                       <h4 className="text-lg font-semibold text-gray-800">
