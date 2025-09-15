@@ -45,8 +45,7 @@ const Main = () => {
             look forward to the innovations that will emerge.”
           </p>
           <p className="mt-3 font-semibold text-gray-900 text-sm md:text-base">
-            ~ Prof. Dr. Bijoy Kumar Kuanr, Head of Department, Special Centre
-            for Nanosciences, Jawaharlal Nehru University
+             - Prof. Dr. Bijoy Kumar Kuanr, Chairperson, Special Centre for Nanosciences, Jawaharlal Nehru University
           </p>
         </div>
         {/* <img
@@ -64,10 +63,10 @@ const Main = () => {
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700">
           <li>Award of Excellence in Nanoscience and Nanoelectronics</li>
-          <li>Felicitation of Prof. Man Mohan, President IAMNOP</li>
+          <li>Outstanding Women Researcher Award</li>
           <li>Innovation Award</li>
           <li>Young Researcher Award</li>
-          <li>Best Oral and Poster Awards Call for Registration & Abstract</li>
+          <li>Best Oral and Poster Awards</li>
         </ul>
       </div>
 

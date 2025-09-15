@@ -1,7 +1,7 @@
 export const data = [
   {
     title: "Message from Convener",
-    text: "It gives me immense pleasure to welcome you all to IAMNOP-2025...",
+    text: "It gives me immense pleasure to welcome you all to ICRANN-2025...",
     img: "https://via.placeholder.com/120",
     name: "Dr. ABC",
     role: "Conference Convener",
@@ -15,7 +15,7 @@ export const data = [
   },
   {
     title: "Message from Co-Convener",
-    text: "IAMNOP-2025 will bring together leading scientists and researchers...",
+    text: "ICRANN-2025 will bring together leading scientists and researchers...",
     img: "https://via.placeholder.com/120",
     name: "Dr. LMN",
     role: "Co-Convener",
@@ -41,6 +41,13 @@ export const facultyData = [
       { name: "Prof. Bijoy Kumar Kuanr, SCNS, JNU" },
     ],
   },
+   {
+    role: "Conveners",
+    members: [
+      { name: "Prof. Satyendra Singh, SCNS, JNU" },
+      { name: "Dr. Pankaj Thakur, SCNS, JNU" },
+    ],
+  },
   {
     role: "Organizing Secretaries",
     members: [
@@ -53,13 +60,7 @@ export const facultyData = [
       { name: "Dr. Neha Paras, SCNS, JNU" },
     ],
   },
-  {
-    role: "Conveners",
-    members: [
-      { name: "Prof. Satyendra Singh, SCNS, JNU" },
-      { name: "Dr. Pankaj Thakur, SCNS, JNU" },
-    ],
-  },
+ 
   {
     role: "Treasurer",
     members: [
@@ -69,21 +70,21 @@ export const facultyData = [
   },
 ];
 
-export const impDates = [
-  { event: "Paper Submission Starts", date: "1st September 2025" },
-  { event: "Paper Submission Deadline", date: "12th October 2025" },
-  { event: "Notification of Paper Acceptance", date: "10th November 2025" },
-  { event: "Camera Ready Submission Deadline", date: "25th November 2025" },
-  { event: "Last Date of Indian Bird Registration", date: "30th November 2025" },
-  { event: "Last Date of Registration", date: "5th December 2025" },
-  { event: "Conference Dates", date: "20th-21st December 2025" },
-];
+  export const impDates = [
+    { event: "Paper Submission Starts", date: "1st September 2025" },
+    { event: "Paper Submission Deadline", date: "12th October 2025" },
+    { event: "Notification of Paper Acceptance", date: "10th November 2025" },
+    { event: "Camera Ready Submission Deadline", date: "25th November 2025" },
+    { event: "Last Date of Indian Bird Registration", date: "30th November 2025" },
+    { event: "Last Date of Registration", date: "5th December 2025" },
+    { event: "Conference Dates", date: "20th-21st December 2025" },
+  ];
 
 export const registrationFee = [
-  { category: "Students/Research Scholars",Indian:  "₹4000", International: "$200" },
-  { category: "Faculty from Academics", Indian:  "₹5000", International: "$250" },
-  { category: "Delegates from Industry", Indian:  "₹10000", International: "$400" },
-  { category: "Co-author/Attendee", Indian: "₹3000", International:"$100" },
+  { category: "Students/Research Scholars",Indian:  "₹4,000", International: "$200" },
+  { category: "Faculty from Academics", Indian:  "₹5,000", International: "$250" },
+  { category: "Delegates from Industry", Indian:  "₹10,000", International: "$400" },
+  { category: "Co-author/Attendee", Indian: "₹3,000", International:"$100" },
 ];
 export const speakers = [
   {

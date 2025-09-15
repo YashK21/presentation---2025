@@ -1,3 +1,5 @@
+import { impDates } from "../../constant/data";
+
 const Abstract = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -20,42 +22,43 @@ const Abstract = () => {
         </a>
       </div>
 
-      {/* Important Dates */}
-      <div className="bg-white shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-6 text-center">
+      {/* ===== Important Dates ===== */}
+      <div className="w-full md:w-[90%] px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
           Important Dates
         </h2>
-
-        <ul className="space-y-4 text-gray-700 text-sm sm:text-base">
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Paper Submission Starts</span>
-            <span>1st September 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Paper Submission Deadline</span>
-            <span>12th October 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Notification of Paper Acceptance</span>
-            <span>10th November 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Camera Ready Submission Deadline</span>
-            <span>25th November 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Last Date of Early Bird Registration</span>
-            <span>30th November 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between border-b pb-2">
-            <span className="font-medium">📌 Last Date of Registration</span>
-            <span>5th December 2025</span>
-          </li>
-          <li className="flex flex-col sm:flex-row sm:justify-between">
-            <span className="font-medium">📌 Conference Dates</span>
-            <span>20th - 21st December 2025</span>
-          </li>
-        </ul>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Event</th>
+                <th className="px-4 md:px-6 py-3 text-center">Date</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {impDates.map((item, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.event}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: item.date.replace(
+                          /(\d+)(st|nd|rd|th)/g,
+                          "$1<sup>$2</sup>"
+                        ),
+                      }}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

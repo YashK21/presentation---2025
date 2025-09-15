@@ -4,13 +4,13 @@ const Committee = () => {
   return (
     <div className="w-full md:w-[90%] px-4 md:px-8 py-10 mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10 text-center">
-        👥 Conference Committees
+        Conference Committees
       </h2>
 
       {/* ===== Local Organizing Committee ===== */}
       <section className="mb-12">
         <h3 className="text-xl md:text-2xl font-semibold text-blue-700 mb-4">
-          📌 Local Organizing Committee
+          Local Organizing Committee
         </h3>
         <div className="bg-white shadow-md rounded-lg p-6 space-y-4 text-sm md:text-base text-gray-700">
           <p>
@@ -42,7 +42,7 @@ const Committee = () => {
       {/* ===== Technical Programme Committee ===== */}
       <section className="mb-12">
         <h3 className="text-xl md:text-2xl font-semibold text-green-700 mb-4">
-          🛠️ Technical Programme Committee (Tentative)
+          Technical Programme Committee (Tentative)
         </h3>
         <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-3 text-sm md:text-base text-gray-700">
           {[
@@ -63,7 +63,7 @@ const Committee = () => {
       {/* ===== International Advisory Committee ===== */}
       <section className="mb-12">
         <h3 className="text-xl md:text-2xl font-semibold text-purple-700 mb-4">
-          🌍 International Advisory Committee (Tentative)
+          International Advisory Committee (Tentative)
         </h3>
         <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-sm md:text-base text-gray-700">
           {[

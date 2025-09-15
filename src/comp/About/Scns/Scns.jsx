@@ -4,7 +4,7 @@ const Scns = () => {
       {/* ===== About SCNS ===== */}
       <div className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-          🧪 About the SCNS
+          About the SCNS
         </h2>
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 leading-relaxed text-gray-700 text-sm md:text-base">
           <p className="mb-4">
@@ -30,7 +30,7 @@ const Scns = () => {
       {/* ===== About Conference ===== */}
       <div>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-          🌍 About the Conference
+          About the Conference
         </h2>
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 leading-relaxed text-gray-700 text-sm md:text-base">
           <p className="mb-4">

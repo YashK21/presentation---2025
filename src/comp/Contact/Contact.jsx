@@ -26,7 +26,7 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="flex flex-col justify-center">
             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-              Prof. Satyendra Singh Dr. Pankaj Thakur
+              Prof. Satyendra Singh
             </h3>
             <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
               Dr. Pankaj Thakur

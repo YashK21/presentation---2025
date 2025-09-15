@@ -8,7 +8,7 @@ const Registration = () => {
   {/* ===== Registration Fee ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-           Fee 💰
+           Fee
         </h2>
         <div className="overflow-x-auto shadow-lg rounded-lg">
           <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
@@ -42,11 +42,17 @@ const Registration = () => {
           </table>
         </div>
       </div>
-
+{/* Important Notes */}
+      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded-lg shadow-sm">
+        <p className="text-gray-800 font-medium text-sm sm:text-base">
+          ⚠️ <span className="font-semibold">Important:</span> Does{" "}
+          <span className="font-bold">NOT</span> include Travel and Accommodation.
+        </p>
+      </div>
       {/* ===== Important Dates ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
-          📅 Important Dates
+          Important Dates
         </h2>
         <div className="overflow-x-auto shadow-lg rounded-lg">
           <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
@@ -66,7 +72,14 @@ const Registration = () => {
                     {item.event}
                   </td>
                   <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
-                    {item.date}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: item.date.replace(
+                          /(\d+)(st|nd|rd|th)/g,
+                          "$1<sup>$2</sup>"
+                        ),
+                      }}
+                    />
                   </td>
                 </tr>
               ))}
@@ -74,13 +87,7 @@ const Registration = () => {
           </table>
         </div>
       </div>
-      {/* Important Notes */}
-      <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded-lg shadow-sm">
-        <p className="text-gray-800 font-medium text-sm sm:text-base">
-          ⚠️ <span className="font-semibold">Important:</span> Does{" "}
-          <span className="font-bold">NOT</span> include Travel and Accommodation.
-        </p>
-      </div>
+      
 
       {/* Charges */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-6">
