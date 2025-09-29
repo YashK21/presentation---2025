@@ -13,7 +13,7 @@ const Abstract = () => {
           Submit your abstract via the link below:
         </p>
         <a
-          href="https://easychair.org/my/conference?conf=icrann2025"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfNL9R5lhFU9-QU3MU66N6HO4YqynSkAQw99WaA0cEyjgequA/viewform?usp=header"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base"
