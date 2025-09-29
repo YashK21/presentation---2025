@@ -4,20 +4,26 @@ const Registration = () => {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
        <div class="text-center mt-10 px-4">
   <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg border-t-4 border-red-800">
-    <div class="flex flex-col items-center">
-      <p class="text-lg font-medium text-gray-800 mb-2">
-        Paper Submission will be through Microsoft CMT
-      </p>
-      <p class="text-sm text-gray-600">
-        The{" "}
-        <a style={{
-              'font-weight': 100
-        }} href="https://cmt3.research.microsoft.com/" class="text-blue-600 underline hover:text-blue-800 transition">
-           Microsoft CMT service
-        </a> 
-        {" "}is being used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-      </p>
-    </div>
+    <div className="flex flex-col items-center">
+  {/* ✅ REQUIRED Plain Acknowledgment Text */}
+  <p className="text-sm text-gray-600 text-center mb-2">
+    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+  </p>
+
+  {/* ✅ Optional Link - Separate from the acknowledgment */}
+  <p className="text-sm text-center">
+    Submit your paper at{" "}
+    <a
+      href="https://cmt3.research.microsoft.com/"
+      className="text-blue-600 underline hover:text-blue-800 transition"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Microsoft CMT
+    </a>
+  </p>
+</div>
+
   </div>
 </div>
 
