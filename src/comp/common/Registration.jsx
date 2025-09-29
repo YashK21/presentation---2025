@@ -10,7 +10,9 @@ const Registration = () => {
       </p>
       <p class="text-sm text-gray-600">
         The{" "}
-        <a href="https://cmt3.research.microsoft.com/" class="text-blue-600 underline hover:text-blue-800 transition">
+        <a style={{
+              'font-weight': 100
+        }} href="https://cmt3.research.microsoft.com/" class="text-blue-600 underline hover:text-blue-800 transition">
            Microsoft CMT service
         </a> 
         {" "}is being used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
