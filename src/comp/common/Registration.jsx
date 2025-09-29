@@ -143,6 +143,13 @@ const Registration = () => {
           Proceed to Registration
         </button>
       </div>
+
+
+      <div className="text-center mt-10">
+        <button className="bg-green-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base">
+         Note : The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+        </button>
+      </div>
     </div>
   );
 };
