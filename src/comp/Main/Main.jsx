@@ -11,12 +11,15 @@ const Main = () => {
     <div className="flex flex-col items-center w-full">
       {/* ===== Top Info & Register Button ===== */}
       <div className="flex flex-col md:flex-row items-center justify-center text-center gap-4 md:gap-6 px-4 py-6">
-        <p className="text-sm md:text-base font-medium text-gray-800">
-          3rd International Conference on Recent Advances in Nanoscience and
+        <p className="text-xs md:text-base font-medium text-gray-800">
+          <span className="text-sm md:text-base font-semibold">
+            3<sup className="align-super text-[0.65em] ml-0.5">rd</sup>
+          </span>{" "}
+          International Conference on Recent Advances in Nanoscience and
           Nanotechnology-2025 (ICRANN-2025) |
-          <br className="hidden md:block" /> Dates for conference:{" "}
-          <span className="font-semibold">December 20-21, 2025.</span>
+          <span className="font-semibold"> December 20-21, 2025.</span>
         </p>
+
         <button
           onClick={handleNaivgate}
           className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition cursor-pointer"
@@ -51,7 +54,9 @@ const Main = () => {
             - Prof. Dr. Bijoy Kumar Kuanr, Chairperson, Special Centre for
             Nanosciences, Jawaharlal Nehru University
           </p>
-          <p className="mt-3 font-semibold text-red-500 text-sm md:text-base">[Co-Researcher of Prof. Grünberg - Nobel Laureate Physics 2007]</p>
+          <p className="mt-3 font-semibold text-red-500 text-sm md:text-base">
+            [Co-Researcher of Prof. Grünberg - Nobel Laureate Physics 2007]
+          </p>
         </div>
         {/* <img
           src="https://via.placeholder.com/120"

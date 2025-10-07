@@ -93,9 +93,12 @@ const Conference = () => {
         </h2>
         <ul className="list-disc list-inside text-gray-700 text-sm md:text-base leading-relaxed space-y-2">
           <li>
-            <strong>3rd International Conference:</strong> Recent Advances in
-            Nanoscience and Nanotechnology-2025 (ICRANN-2025)
-          </li>
+  <strong>
+    3<sup className="align-super text-xs">rd</sup> International Conference:
+  </strong>{" "}
+  Recent Advances in Nanoscience and Nanotechnology-2025 (ICRANN-2025)
+</li>
+
           <li>
             <strong>Dates:</strong> 20-21st December, 2025
           </li>
