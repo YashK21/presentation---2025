@@ -87,17 +87,47 @@ export const facultyData = [
   export const impDates = [
     { event: "Paper Submission Starts", date: "1st September 2025" },
     { event: "Paper Submission Deadline", date: "12th October 2025" },
-    { event: "Notification of Paper Acceptance", date: "10th November 2025" },
-    { event: "Camera Ready Submission Deadline", date: "25th November 2025" },
-    { event: "Last Date of Indian Bird Registration", date: "30th November 2025" },
-    { event: "Last Date of Registration", date: "5th December 2025" },
+    { event: "Notification of Paper Acceptance / Rejection", date: "12th October 2025" },
+    { event: "Last Date of Early Bird Registration and Full Paper Submission", date: "15th October 2025" },
+    { event: "Last Date of Registration", date: "25th October 2025" },
+    { event: "Camera Ready Full Paper Submission Deadline", date: "15th November 2025" },
     { event: "Conference Dates", date: "20th-21st December 2025" },
   ];
 
 export const registrationFee = [
-  { category: "Students/Research Scholars",Indian:  "₹4,000", International: "$200" },
-  { category: "Faculty from Academics", Indian:  "₹5,000", International: "$250" },
-  { category: "Delegates from Industry", Indian:  "₹10,000", International: "$400" },
+  // --- Early Bird Categories ---
+  {
+    category: "Student / Research Scholar (Early Bird)",
+    Indian: "₹3000",
+    International: "$150",
+    type: "early",
+  },
+  {
+    category: "Faculty from Academics (Early Bird)",
+    Indian: "₹4000",
+    International: "$200",
+    type: "early",
+  },
+
+  // --- Regular Categories ---
+  {
+    category: "Student / Research Scholar",
+    Indian: "₹4000",
+    International: "$200",
+    type: "regular",
+  },
+  {
+    category: "Faculty from Academics",
+    Indian: "₹5000",
+    International: "$250",
+    type: "regular",
+  },
+  {
+    category: "Delegates from Industry",
+    Indian: "₹10000",
+    International: "$400",
+    type: "regular",
+  },
   { category: "Co-author/Attendee", Indian: "₹3,000", International:"$100" },
 ];
 export const speakers = [

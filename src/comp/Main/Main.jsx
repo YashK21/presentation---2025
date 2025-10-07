@@ -51,6 +51,7 @@ const Main = () => {
             - Prof. Dr. Bijoy Kumar Kuanr, Chairperson, Special Centre for
             Nanosciences, Jawaharlal Nehru University
           </p>
+          <p className="mt-3 font-semibold text-red-500 text-sm md:text-base">[Co-Researcher of Prof. Grünberg - Nobel Laureate Physics 2007]</p>
         </div>
         {/* <img
           src="https://via.placeholder.com/120"

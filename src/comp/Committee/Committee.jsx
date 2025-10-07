@@ -49,10 +49,11 @@ const Committee = () => {
             "Prof. Prabu K, NITK Surathkal",
             "Prof. Shyam Lal, NITK Surathkal",
             "Dr. Deepak J, IIT Roorkee",
-            "Dr. Mukesh Khandelwal, JNU, New Delhi",
+            "Dr. Mukesh Khandelwal, DU, New Delhi",
             "Prof. Arvind Kumar, NIT Kurushetra",
             "Prof. Santanu Dwari, IIT Dhanbad",
             "Dr. Rajesh Kumar, IIIT Dharwad",
+            "Dr. PK Mruduli,IIT Delhi",
             "Dr. Ravi Kant, ZHDC, University of Delhi",
           ].map((member, idx) => (
             <p key={idx}>• {member}</p>
@@ -101,6 +102,16 @@ const Committee = () => {
         </h3>
         <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-sm md:text-base text-gray-700">
           {[
+            "Prof. Bijoy Kumar Kuanr, SCNS, JNU",
+            "Prof. Satyendra Singh, SCNS, JNU",
+            "Dr. Pankaj Thakur, SCNS, JNU",
+            "Dr. Prakash Kanoo, SCNS, JNU",
+            "Dr. Sandeep Kumar, SCNS, JNU",
+            "Dr. Neha Paras, SCNS, JNU",
+            "Dr. Balaji Birajdar, SCNS, JNU",
+            "Dr. Pratima Solanki, SCNS, JNU",
+            "Dr. Tulika Prasad, SCNS, JNU",
+            "Dr. Vinod Kumar, KMC College, DU",
             "Prof. Sanjog Rawat, Central University of Rajasthan",
             "Prof. Pramod Pal, Central University of Karnataka",
             "Prof. G R Mishra, Dr RML Avadh University, Ayodhya",

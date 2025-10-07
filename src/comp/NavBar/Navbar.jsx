@@ -103,6 +103,14 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
+          <li>
+              <Link
+                to="/gallery"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
+                Gallery
+              </Link>
+            </li>
         </ul>
       </div>
 
@@ -156,6 +164,14 @@ const Navbar = () => {
                 className="block hover:text-yellow-300 cursor-pointer"
               >
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery"
+                className="block hover:text-yellow-300 cursor-pointer"
+              >
+                Gallery
               </Link>
             </li>
           </ul>

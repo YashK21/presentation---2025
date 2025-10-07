@@ -1,7 +1,14 @@
+import image from "../../../constant/img/image.png";
+
 const Scns = () => {
   return (
     <div className="w-full md:w-[90%] px-4 md:px-8 py-10 mx-auto">
       {/* ===== About SCNS ===== */}
+      <img
+                src={image}
+                alt="JNU Logo"
+                className="h-24 w-32 lg:h-36 lg:w-44 object-contain mix-blend-darken"
+              />
       <div className="mb-12">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
           About the SCNS
