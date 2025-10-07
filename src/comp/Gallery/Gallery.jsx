@@ -7,7 +7,6 @@ import image3 from "../../constant/gallery/image3.png";
 import image4 from "../../constant/gallery/image4.png";
 import image5 from "../../constant/gallery/image5.png";
 import image6 from "../../constant/gallery/image6.png";
-import image7 from "../../constant/gallery/image7.png";
 
 // Other facility images
 import ElectrospinningSetup from "../../constant/gallery/Electrospinning Setup.png";
@@ -19,13 +18,12 @@ import SputteringandElectronBeamsystem from "../../constant/gallery/Sputtering a
 
 // Central Instrumentation Images Array
 const images = [
-  { img: image1, title: "Powder X-ray Diffraction " },
-  { img: image2, title: "Zeta Potential" },
-  { img: image3, title: "Atomic Force Microscopy " },
-  { img: image4, title: "Raman Spectrophotometer" },
-  { img: image5, title: "UV-vis Spectrophotometer" },
-  { img: image6, title: "Raman Spectrophotometer" },
-  { img: image7, title: "Scanning Electron Microscope(SEM)" },
+  { img: image1, title: 'Atomic Force Microscopy' },
+  { img: image2, title: 'Raman Spectrophotometer' },
+  { img: image3, title: 'UV vis Spectrophotometer' },
+  { img: image4, title: 'Zeta Potential' },
+  { img: image5, title: 'Powder X-ray Diffraction' },
+  { img: image6, title: 'CIF Room' },
 ];
 
 // Other Research Facilities Array
