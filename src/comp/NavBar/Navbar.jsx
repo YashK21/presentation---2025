@@ -108,7 +108,7 @@ const Navbar = () => {
                 to="/gallery"
                 className="block hover:text-yellow-300 cursor-pointer"
               >
-                Gallery
+                Research Facilities
               </Link>
             </li>
         </ul>
@@ -171,7 +171,7 @@ const Navbar = () => {
                 to="/gallery"
                 className="block hover:text-yellow-300 cursor-pointer"
               >
-                Gallery
+                Research Facilities
               </Link>
             </li>
           </ul>

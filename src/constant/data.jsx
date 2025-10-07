@@ -128,7 +128,11 @@ export const registrationFee = [
     International: "$400",
     type: "regular",
   },
-  { category: "Co-author/Attendee", Indian: "₹3,000", International:"$100" },
+  { category: "Co-author/Attendee",
+     Indian: "₹3,000",
+    International:"$100",
+    type:"regular"
+     },
 ];
 export const speakers = [
   {
