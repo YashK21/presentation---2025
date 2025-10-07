@@ -18,7 +18,15 @@ import PulsedLaserDepositionSystem from "../../constant/gallery/Pulsed Laser Dep
 import SputteringandElectronBeamsystem from "../../constant/gallery/Sputtering and Electron Beam system.png";
 
 // Central Instrumentation Images Array
-const images = [image1, image2, image3, image4, image5, image6, image7];
+const images = [
+  { img: image1, title: "Powder X-ray Diffraction " },
+  { img: image2, title: "Zeta Potential" },
+  { img: image3, title: "Atomic Force Microscopy " },
+  { img: image4, title: "Raman Spectrophotometer" },
+  { img: image5, title: "UV-vis Spectrophotometer" },
+  { img: image6, title: "Raman Spectrophotometer" },
+  { img: image7, title: "Scanning Electron Microscope(SEM)" },
+];
 
 // Other Research Facilities Array
 const otherResearchFacilityImg = [
@@ -57,19 +65,22 @@ const Gallery = () => {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <img
-              src={img}
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full h-64 object-cover"
-            />
-          </div>
-        ))}
+  {images.map((item, index) => (
+    <div
+      key={index}
+      className="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <img
+        src={item.img}
+        alt={item.title}
+        className="w-full h-64 object-cover"
+      />
+      <div className="bg-white text-center py-3 px-2 font-semibold text-gray-700">
+        {item.title}
       </div>
+    </div>
+  ))}
+</div>
 
       {/* Other Research Facility */}
       <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">
