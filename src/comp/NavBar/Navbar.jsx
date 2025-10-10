@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-6 font-medium">
+        <ul className="hidden md:flex gap-10 lg:gap-14 xl:gap-16 font-medium">
           <li>
             <Link to="/" className="hover:text-yellow-300 cursor-pointer">
               Home
