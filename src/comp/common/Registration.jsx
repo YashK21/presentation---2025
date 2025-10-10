@@ -1,4 +1,8 @@
-import { registrationFee, impDates } from "../../constant/data";
+import {
+  registrationFee,
+  impDates,
+  sponsorshipOptions,
+} from "../../constant/data";
 
 const Registration = () => {
   const earlyBirdFees = registrationFee.filter((item) => item.type === "early");
@@ -21,7 +25,9 @@ const Registration = () => {
               <tr>
                 <th className="px-4 md:px-6 py-3 text-left">Category</th>
                 <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
-                <th className="px-4 md:px-6 py-3 text-center">International (USD)</th>
+                <th className="px-4 md:px-6 py-3 text-center">
+                  International (USD)
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -30,7 +36,9 @@ const Registration = () => {
                   key={idx}
                   className="bg-green-50 hover:bg-green-100 transition duration-200 ease-in-out"
                 >
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{row.category}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {row.category}
+                  </td>
                   <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
                     {row.Indian}
                   </td>
@@ -55,7 +63,9 @@ const Registration = () => {
               <tr>
                 <th className="px-4 md:px-6 py-3 text-left">Category</th>
                 <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
-                <th className="px-4 md:px-6 py-3 text-center">International (USD)</th>
+                <th className="px-4 md:px-6 py-3 text-center">
+                  International (USD)
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -64,7 +74,9 @@ const Registration = () => {
                   key={idx}
                   className="hover:bg-gray-50 transition duration-200 ease-in-out"
                 >
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{row.category}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {row.category}
+                  </td>
                   <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
                     {row.Indian}
                   </td>
@@ -82,7 +94,59 @@ const Registration = () => {
       <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6 rounded-lg shadow-sm">
         <p className="text-gray-800 font-medium text-sm sm:text-base">
           ⚠️ <span className="font-semibold">Important:</span> Registration fee{" "}
-          <span className="font-bold">does not</span> include Travel and Accommodation.
+          <span className="font-bold">does not</span> include Travel and
+          Accommodation.
+        </p>
+      </div>
+
+      {/* Sponshorship}
+      {/* ===== Sponsorship / Corporate Participants ===== */}
+      <div className="w-full md:w-[90%] px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          Sponsorship / Corporate Participants
+        </h2>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="min-w-full text-sm md:text-base border border-gray-200 rounded-lg overflow-hidden">
+            <thead className="bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+              <tr>
+                <th className="px-4 md:px-6 py-3 text-left">Category</th>
+                <th className="px-4 md:px-6 py-3 text-center">Price (INR)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {sponsorshipOptions.map((item, idx) => (
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition duration-200 ease-in-out"
+                >
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.category}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
+                    {item.price}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-gray-700 text-sm mt-4">
+          <strong>Note:</strong> For students, a scanned copy of current ID is
+          required. All foreign delegates/students must fill the International
+          Travel Information Form with passport and personal details for
+          government clearance. A one/two-page brief resume must also be
+          submitted.
+          <br />
+          <br />
+          <strong>Refund Policy:</strong> Registration and accommodation fees
+          are non-refundable.
+          <br />
+          <br />
+          <strong>Payment Mode:</strong> Online payments accepted via
+          NEFT/Credit/Debit Card.{" "}
+          <span className="font-semibold text-red-600">
+            DDs are not accepted.
+          </span>
         </p>
       </div>
 
@@ -105,7 +169,9 @@ const Registration = () => {
                   key={idx}
                   className="hover:bg-gray-50 transition duration-200 ease-in-out"
                 >
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{item.event}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.event}
+                  </td>
                   <td className="px-4 md:px-6 py-3 text-center font-medium text-gray-900">
                     <span
                       dangerouslySetInnerHTML={{
@@ -130,10 +196,12 @@ const Registration = () => {
         </h2>
         <ul className="list-disc pl-5 space-y-2 text-gray-700 text-sm sm:text-base">
           <li>
-            <span className="font-semibold">Indian Participants:</span> ₹3000 per additional paper
+            <span className="font-semibold">Indian Participants:</span> ₹3000
+            per additional paper
           </li>
           <li>
-            <span className="font-semibold">International Participants:</span> $100 per additional paper
+            <span className="font-semibold">International Participants:</span>{" "}
+            $100 per additional paper
           </li>
         </ul>
       </div>
@@ -144,37 +212,57 @@ const Registration = () => {
           Payment Information
         </h2>
         <p className="text-gray-700 mb-4 text-sm sm:text-base">
-          The participation fees for the above programmes will be accepted only through{" "}
+          The participation fees for the above programmes will be accepted only
+          through{" "}
           <span className="font-semibold">e-transfer / RTGS / NEFT</span>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm sm:text-base">
           <div className="space-y-2">
-            <p><span className="font-semibold">Bank Account No.:</span> 35404650496</p>
-            <p><span className="font-semibold">Bank Address:</span> State Bank of India, New Campus Branch, New Delhi-110067</p>
-            <p><span className="font-semibold">Beneficiary Name:</span> JNU Sponsored Seminar & Conference</p>
+            <p>
+              <span className="font-semibold">Bank Account No.:</span>{" "}
+              35404650496
+            </p>
+            <p>
+              <span className="font-semibold">Bank Address:</span> State Bank of
+              India, New Campus Branch, New Delhi-110067
+            </p>
+            <p>
+              <span className="font-semibold">Beneficiary Name:</span> JNU
+              Sponsored Seminar & Conference
+            </p>
           </div>
           <div className="space-y-2">
-            <p><span className="font-semibold">IFSC Code:</span> SBIN0010441</p>
-            <p><span className="font-semibold">MICR Code:</span> 110002428</p>
+            <p>
+              <span className="font-semibold">IFSC Code:</span> SBIN0010441
+            </p>
+            <p>
+              <span className="font-semibold">MICR Code:</span> 110002428
+            </p>
           </div>
         </div>
-
-        
       </div>
-      <br/>
+      <br />
       <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm">
         <h2 className="text-xl sm:text-2xl font-semibold text-blue-500 mb-4">
-          After payment on the given bank credentials,  applicants are required to complete the registration form.
-          <br/>Note: Early Bird Registration fees valid only till 15th October.
+          After payment on the given bank credentials, applicants are required
+          to complete the registration form.
+          <br />
+          Note: Early Bird Registration fees valid only till 15th October.
         </h2>
       </div>
 
       {/* Call to Action */}
       <div className="text-center mt-10">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base">
-          Proceed to Registration
-        </button>
+        <a
+          href="https://docs.google.com/forms/d/1WBqkhjVgUno1GwgL15iogC9LC67uxSW-9OpTSptqIcg/edit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base">
+            Proceed to Registration
+          </button>
+        </a>
       </div>
     </div>
   );

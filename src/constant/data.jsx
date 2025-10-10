@@ -83,8 +83,7 @@ export const facultyData = [
   },
 ];
 
-
-  export const impDates = [
+export const impDates = [
     { event: "Paper Submission Starts", date: "1st September 2025" },
     { event: "Paper Submission Deadline", date: "12th October 2025" },
     { event: "Notification of Paper Acceptance / Rejection", date: "12th October 2025" },
@@ -92,7 +91,7 @@ export const facultyData = [
     { event: "Last Date of Registration", date: "25th October 2025" },
     { event: "Camera Ready Full Paper Submission Deadline", date: "15th November 2025" },
     { event: "Conference Dates", date: "20th-21st December 2025" },
-  ];
+];
 
 export const registrationFee = [
   // --- Early Bird Categories ---
@@ -197,4 +196,48 @@ export const speakers = [
   //     "Department of Chemistry, Atma Ram Sanatan Dharm College, University of Delhi",
   // },
 ];
+
+export const sponsorshipOptions = [
+  {
+    category:
+      "Diamond Sponsor (with one stall, advertisement on Conference banner, full page in Conference booklet, branding on registration desk)",
+    price: "₹1,00,000",
+  },
+  {
+    category:
+      "Gold Sponsor (with one stall, advertisement on Conference banner, half page in Conference booklet)",
+    price: "₹75,000",
+  },
+  {
+    category:
+      "Silver Sponsor (with one stall, half page in Conference booklet)",
+    price: "₹50,000",
+  },
+  {
+    category:
+      "Bronze Sponsor (with one stall, quarter page in Conference booklet)",
+    price: "₹25,000",
+  },
+  {
+    category: "Full page color ad in Conference Program",
+    price: "₹25,000",
+  },
+  {
+    category: "Half page color ad in Conference Program",
+    price: "₹15,000",
+  },
+  {
+    category: "Quarter page color ad in Conference Program",
+    price: "₹10,000",
+  },
+  {
+    category: "Branding the registration counters",
+    price: "₹5,000",
+  },
+  {
+    category: "Exhibition Stall (3 Mtr. X 2 Mtr.)",
+    price: "₹20,000",
+  },
+];
+
 
