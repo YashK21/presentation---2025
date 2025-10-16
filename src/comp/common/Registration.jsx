@@ -15,7 +15,7 @@ const Registration = () => {
       </h1>
 
       {/* ===== Early Bird Fee ===== */}
-      <div className="w-full md:w-[90%] px-4 py-10">
+      {/* <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-6 text-center">
           Early Bird Registration Fee (till 15th October 2025)
         </h2>
@@ -50,7 +50,7 @@ const Registration = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
 
       {/* ===== Regular Fee ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
@@ -247,8 +247,8 @@ const Registration = () => {
         <h2 className="text-xl sm:text-2xl font-semibold text-blue-500 mb-4">
           After payment on the given bank credentials, applicants are required
           to complete the registration form.
-          <br />
-          Note: Early Bird Registration fees valid only till 15th October.
+          {/* <br />
+          Note: Early Bird Registration fees valid only till 15th October. */}
         </h2>
       </div>
 
