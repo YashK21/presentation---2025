@@ -12,6 +12,25 @@ import pratimaImg from "./fac_img/pratima solanki.jpg";
 import tulikaImg from "./fac_img/tulika prasad.jpg";
 import vinodImg from "./fac_img/vinod kumar.png";
 import nehaImg from "./fac_img/neha paras.png";
+
+
+// /keynote speaker
+import adish from "./keynoteSpeaker/adish tyagi.png";
+import ajit from "./keynoteSpeaker/ajit khosla.png";
+import anup from "./keynoteSpeaker/anup kumar.jpg";
+import dinesh from "./keynoteSpeaker/dinesh pathak.jpg";
+import goutam from "./keynoteSpeaker/goutam dalapati.png";
+import prabhat from "./keynoteSpeaker/Prabhat-Chaudhari.webp";
+import rajan from "./keynoteSpeaker/rajan patel.png";
+import sameer from "./keynoteSpeaker/samir rahatekar.jpeg";
+import suman from "./keynoteSpeaker/suman k dhar.jpg";
+import kalkur from "./keynoteSpeaker/TS Kalkur.webp";
+import veerakumar from "./keynoteSpeaker/V Veerakumar.jpg";
+import vijay from "./keynoteSpeaker/vijay-kumar-thakur.jpg";
+import vikram from "./keynoteSpeaker/vikram singh.png";
+import zainul from "./keynoteSpeaker/Zainul Aabdin.png";
+
+
 export const data = [
   {
     title: "Message from Convener",
@@ -135,66 +154,75 @@ export const registrationFee = [
 ];
 export const speakers = [
   {
-    name: "Prof. T. S. KalKur",
+    name: "Prof. T. S. Kalkur",
     designation: "University of Colorado, Colorado, USA",
+    image: kalkur,
   },
   {
     name: "Prof. Ajit Khosla",
     designation: "China and Yamagata University, Japan",
+    image: ajit,
   },
   {
     name: "Prof. Sameer Rahatekar",
     designation: "Cranfield, UK",
+    image: sameer,
   },
   {
     name: "Dr. Goutam Dalapati",
     designation: "Hyden, Singapore",
+    image: goutam,
   },
   {
     name: "Prof. Suman K. Dhar",
     designation: "Vice Chancellor, TERI",
+    image: suman,
   },
   {
     name: "Dr. Dinesh Pathak",
     designation: "UWI, West Indies",
+    image: dinesh,
   },
   {
     name: "Dr. V. Veerakumar",
     designation: "Minnesota, USA",
+    image: veerakumar,
   },
   {
     name: "Prof. Vijay Kumar Thakur",
     designation: "SRUC, UK",
+    image: vijay,
   },
   {
-    name: "Dr. Zainul Aadbin",
+    name: "Dr. Zainul Aabdin",
     designation: "IMRE, A*STAR, Singapore",
+    image: zainul,
   },
   {
     name: "Dr. Adish Tyagi",
     designation: "BARC, Mumbai",
+    image: adish,
   },
   {
     name: "Dr. Vikram Singh",
     designation: "IMDEA Energy Institute, Madrid, Spain",
+    image: vikram,
   },
   {
     name: "Dr. Anup Kumar",
     designation: "Trinity College, Ireland",
+    image: anup,
   },
   {
     name: "Prof. Rajan Patel",
     designation: "Director, Interdisciplinary Research, JMI, New Delhi",
+    image: rajan,
   },
   {
     name: "Dr. Prabhat Chaudhary",
     designation: "AIIMS, New Delhi",
+    image: prabhat,
   },
-  // {
-  //   name: "Prof. Prashant Singh",
-  //   designation:
-  //     "Department of Chemistry, Atma Ram Sanatan Dharm College, University of Delhi",
-  // },
 ];
 
 export const sponsorshipOptions = [

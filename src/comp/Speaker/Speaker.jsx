@@ -16,10 +16,12 @@ const Speaker = () => {
               key={idx}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center"
             >
-              {/* Avatar Placeholder */}
-              <div className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full bg-gradient-to-r from-blue-300 to-indigo-400 flex items-center justify-center text-white font-bold text-xl">
-                {speaker.name.split(" ")[1][0]} {/* First letter of surname */}
-              </div>
+              {/* Speaker Image */}
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-24 h-24 md:w-28 md:h-28 mb-4 rounded-full object-cover border-4 border-indigo-200 shadow-sm"
+              />
 
               {/* Speaker Info */}
               <h3 className="text-lg font-semibold text-gray-800">
