@@ -31,7 +31,7 @@ const Committee = () => {
             <br /> Prof. Satyendra Singh, Dr. Pankaj Thakur
           </p>
           <p>
-            <span className="font-semibold">Organizing Secretary</span>
+            <span className="font-semibold">Organizing Secretary :</span>
             <br />Dr. Prakash Kanoo,{" "}
             Dr. Sandeep Kumar, Dr. Balaji Birajdar, Dr. Pratima Solanki, Dr.
             Tulika Prasad, Dr. Vinod Kumar, Dr. Neha Paras
