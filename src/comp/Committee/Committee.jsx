@@ -27,10 +27,14 @@ const Committee = () => {
             Kuanr, SCNS, JNU
           </p>
           <p>
-            <span className="font-semibold">Organizing Secretary/Conveners:</span>
-            <br /> Prof. Satyendra Singh, Dr. Pankaj Thakur, Dr. Prakash Kanoo,{" "}
+            <span className="font-semibold">Conveners:</span>
+            <br /> Prof. Satyendra Singh, Dr. Pankaj Thakur
+          </p>
+          <p>
+            <span className="font-semibold">Organizing Secretary</span>
+            <br />Dr. Prakash Kanoo,{" "}
             Dr. Sandeep Kumar, Dr. Balaji Birajdar, Dr. Pratima Solanki, Dr.
-            Tulika Prasad, Dr. Vinod Kumar, Dr. Neha Paras (SCNS, JNU)
+            Tulika Prasad, Dr. Vinod Kumar, Dr. Neha Paras
           </p>
           <p>
             <span className="font-semibold">Treasurer:</span> Dr. Pankaj Thakur,
