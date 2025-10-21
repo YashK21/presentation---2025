@@ -247,8 +247,8 @@ const Registration = () => {
         <h2 className="text-xl sm:text-2xl font-semibold text-blue-500 mb-4">
           After payment on the given bank credentials, applicants are required
           to complete the registration form.
-          <br />
-          Note: Early Bird Registration fees valid only till 15th October.
+          {/* <br />
+          Note: Early Bird Registration fees valid only till 15th October. */}
         </h2>
       </div>
 
