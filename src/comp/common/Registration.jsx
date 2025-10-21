@@ -15,7 +15,7 @@ const Registration = () => {
       </h1>
 
       {/* ===== Early Bird Fee ===== */}
-      <div className="w-full md:w-[90%] px-4 py-10">
+      {/* <div className="w-full md:w-[90%] px-4 py-10">
         <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-6 text-center">
           Early Bird Registration Fee (till 15th October 2025)
         </h2>
@@ -50,7 +50,7 @@ const Registration = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
 
       {/* ===== Regular Fee ===== */}
       <div className="w-full md:w-[90%] px-4 py-10">
