@@ -104,10 +104,10 @@ export const facultyData = [
 
 export const impDates = [
     { event: "Abstract Submission Starts", date: "1st September 2025" },
-    { event: "Abstract Submission Deadline", date: "26th October 2025"},
-    { event: "Notification of Abstract Acceptance / Rejection", date: "27th October 2025" },
+    { event: "Abstract Submission Deadline (Extended)", date: "5th November 2025"},
+    { event: "Notification of Abstract Acceptance / Rejection", date: "6th November 2025" },
     // { event: "Last Date of Early Bird Registration and Full Paper Submission", date: "15th October 2025" },
-    { event: "Last Date of Registration", date: "30th October 2025" },
+    { event: "Last Date of Registration", date: "7th November 2025" },
     // { event: "Camera Ready Full Paper Submission Deadline", date: "15th November 2025" },
     { event: "Conference Dates", date: "20th-21st December 2025" },
 ];
