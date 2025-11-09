@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Speaker from "./comp/Speaker/Speaker";
 import Contact from "./comp/Contact/Contact";
 import Gallery from "./comp/Gallery/Gallery.jsx";
+import Accomodations from "./comp/Accomodations/Accomodations.jsx";
 function App() {
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
          <Route path="/privacy-policy" element={<PP/>}/>
          <Route path="/refund-policy" element={<RP/>}/>
          <Route path="/gallery" element={<Gallery/>}/>
-
+        <Route path="/accomodations" element={<Accomodations/>}/>
       </Routes>
 
       <Footer />

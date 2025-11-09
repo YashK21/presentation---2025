@@ -1,12 +1,13 @@
 import jnuLogo from "../../constant/img/jnuLogo.png";
 import nanoTechLogo from "../../constant/img/nano tech.png";
+import biotech from "../../constant/img/biotech.png";
+
 import Navbar from "../NavBar/Navbar";
 
 const Header = () => {
   return (
     <div className="flex flex-col">
-      {" "}
-      {/* Top Banner */}{" "}
+      {/* Top Banner */}
       <div className="w-full bg-blue-400 lg:flex hidden flex-row items-center justify-between gap-6 px-8 py-6 lg:py-10">
         {/* JNU Logo */}
         <img
@@ -32,14 +33,25 @@ const Header = () => {
           </p>
         </div>
 
+        {/* Biotech Logo (Improved Style) */}
+        <div className="flex items-center justify-center rounded-2xl p-3 lg:p-4">
+          <img
+            src={biotech}
+            alt="Department of Biotechnology Logo"
+            className="h-28 w-36 lg:h-44 lg:w-52 object-contain mix-blend-normal"
+          />
+        </div>
+
         {/* Atom Logo */}
         <img
           src={nanoTechLogo}
-          alt="Atom Logo"
+          alt="NanoTech Logo"
           className="h-32 w-40 lg:h-48 lg:w-60 object-contain mix-blend-multiply"
         />
       </div>
-      {/* Navbar */} <Navbar />{" "}
+
+      {/* Navbar */}
+      <Navbar />
     </div>
   );
 };
