@@ -7,6 +7,23 @@ const Abstract = () => {
         Abstract / Full Paper Submission
       </h1>
 
+
+      {/* Submission Link */}
+      <div className="text-center mb-10">
+        <p className="text-gray-700 mb-3 font-medium text-sm sm:text-base">
+          Submit your abstract via the link below:
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfNL9R5lhFU9-QU3MU66N6HO4YqynSkAQw99WaA0cEyjgequA/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base"
+        >
+          Submit Abstract
+        </a>
+      </div>
+
+      
       {/* Section for Publications & Proceedings */}
       <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">
         Publications & Proceedings
@@ -28,21 +45,6 @@ const Abstract = () => {
           committee and will undergo the standard peer-review process of the
           respective journals.
         </p>
-      </div>
-
-      {/* Submission Link */}
-      <div className="text-center mb-10">
-        <p className="text-gray-700 mb-3 font-medium text-sm sm:text-base">
-          Submit your abstract via the link below:
-        </p>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfNL9R5lhFU9-QU3MU66N6HO4YqynSkAQw99WaA0cEyjgequA/viewform?usp=header"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-xl shadow-lg font-medium transition duration-300 text-sm sm:text-base"
-        >
-          Submit Abstract
-        </a>
       </div>
 
       {/* ===== Important Dates ===== */}
