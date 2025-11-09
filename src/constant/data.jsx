@@ -29,6 +29,8 @@ import veerakumar from "./keynoteSpeaker/V Veerakumar.jpg";
 import vijay from "./keynoteSpeaker/vijay-kumar-thakur.jpg";
 import vikram from "./keynoteSpeaker/vikram singh.png";
 import zainul from "./keynoteSpeaker/Zainul Aabdin.png";
+import prashant from "./fac_img/Prashant Mishra.png"
+
 
 
 export const data = [
@@ -222,6 +224,11 @@ export const speakers = [
     name: "Dr. Prabhat Chaudhary",
     designation: "AIIMS, New Delhi",
     image: prabhat,
+  },
+  {
+    name: "Prof. Prashant Mishra",
+    designation: "IIT Delhi",
+    image: prashant,
   },
 ];
 
