@@ -7,6 +7,16 @@ const Abstract = () => {
         Abstract / Full Paper Submission
       </h1>
 
+      <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-600 mb-8">
+       Publications & Proceedings
+      </h1>
+
+      <h3 className="text-3xl sm:text-4xl font-bold text-center mb-8">
+        ICRANN-2025 encourages the submission of original and unpublished research. All accepted extended abstracts will be published in the conference proceedings, titled the Book of Abstracts, which will be assigned an online ISBN.
+For authors who choose to submit a full paper, accepted manuscripts may be assigned to affiliated SCI/SCIE & Scopus-indexed journals, based on the scope and quality of the work. Full papers submitted to ICRANN-2025 by the deadline will be evaluated for originality by the committee and will undergo the standard peer-review process of the respective journals.
+      </h3>
+
+
       {/* Submission Link */}
       <div className="text-center mb-10">
         <p className="text-gray-700 mb-3 font-medium text-sm sm:text-base">
