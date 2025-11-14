@@ -1,5 +1,5 @@
 import { impDates } from "../../constant/data";
-
+import nanosci from "../../constant/img/nanosci.png"
 const Abstract = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -46,6 +46,37 @@ const Abstract = () => {
           respective journals.
         </p>
       </div>
+{/* ===== NanoLIFE Journal Section ===== */}
+<div className="max-w-4xl mx-auto mt-8 mb-12">
+
+  <div className="flex flex-col items-center space-y-4">
+     <p className="text-gray-700 text-sm sm:text-base text-center">
+      The full paper will be uploaded as a new submission through CMT portal after the conference dates. <br />
+      
+    </p>
+    {/* Journal Image */}
+    <img
+      src={nanosci}
+      alt="NanoLIFE Journal Cover"
+      className="w-64 sm:w-72 rounded-lg shadow-md"
+    />
+
+    {/* Journal Link + Info */}
+    <a
+      href="https://www.worldscientific.com/worldscinet/nl"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline text-base sm:text-lg font-medium text-center"
+    >
+      NanoLIFE (Impact Factor: 0.7)
+    </a>
+   <p className="text-gray-700 text-sm sm:text-base text-center">
+      Note: Other Journals information will be display soon
+    </p>
+   
+  </div>
+
+</div>
 
       {/* ===== Important Dates ===== */}
       {/* Centering the table container */}
