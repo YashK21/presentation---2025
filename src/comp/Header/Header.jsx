@@ -1,4 +1,4 @@
-// import jnuLogo from "../../constant/img/jnuLogo.png";
+import jnuLogo from "../../constant/img/jnuLogo.png";
 import csirLogo from "../../constant/img/CSIR-Logo.jpg";
 import nanoTechLogo from "../../constant/img/nano tech.png";
 import biotech from "../../constant/img/biotech.png";
@@ -10,21 +10,14 @@ const Header = () => {
     <div className="flex flex-col">
       {/* Top Banner */}
       <div className="w-full bg-blue-400 lg:flex hidden flex-row items-center justify-between gap-6 px-8 py-6 lg:py-10">
-         {/* Biotech Logo (Improved Style) */}
-        <div className="flex items-center justify-center rounded-2xl p-3 lg:p-4">
-          <img
-            src={biotech}
-            alt="Department of Biotechnology Logo"
-            className="h-28 w-36 lg:h-44 lg:w-52 object-contain mix-blend-darken"
-          />
-        </div>
+        {/* Biotech Logo (Improved Style) */}
 
         {/* JNU Logo */}
-        {/* <img
+        <img
           src={jnuLogo}
           alt="JNU Logo"
           className="h-32 w-40 lg:h-48 lg:w-60 object-contain mix-blend-darken"
-        /> */}
+        />
 
         {/* Conference Info */}
         <div className="flex flex-col text-center text-white font-bold flex-1 px-4">
@@ -43,6 +36,13 @@ const Header = () => {
           </p>
         </div>
 
+        <div className="flex items-center justify-center rounded-2xl p-3 lg:p-4">
+          <img
+            src={biotech}
+            alt="Department of Biotechnology Logo"
+            className="h-28 w-36 lg:h-44 lg:w-52 object-contain mix-blend-darken"
+          />
+        </div>
         {/* Atom Logo */}
         <img
           src={csirLogo}
