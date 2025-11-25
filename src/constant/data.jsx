@@ -12,6 +12,7 @@ import pratimaImg from "./fac_img/pratima solanki.jpg";
 import tulikaImg from "./fac_img/tulika prasad.jpg";
 import vinodImg from "./fac_img/vinod kumar.png";
 import nehaImg from "./fac_img/neha paras.png";
+import kkImg from "./fac_img/KK Naik.png";
 
 
 // /keynote speaker
@@ -32,29 +33,6 @@ import zainul from "./keynoteSpeaker/Zainul Aabdin.png";
 import prashant from "./keynoteSpeaker/Prashant Mishra.png"
 import dhiraj from "./keynoteSpeaker/Dhiraj Devidas Bhatia.png"
 
-export const data = [
-  {
-    title: "Message from Convener",
-    text: "It gives me immense pleasure to welcome you all to ICRANN-2025...",
-    img: "https://via.placeholder.com/120",
-    name: "Dr. ABC",
-    role: "Conference Convener",
-  },
-  {
-    title: "Message from Organizing Secretary",
-    text: "We are delighted to invite participants from across the globe...",
-    img: "https://via.placeholder.com/120",
-    name: "Prof. XYZ",
-    role: "Organizing Secretary",
-  },
-  {
-    title: "Message from Co-Convener",
-    text: "ICRANN-2025 will bring together leading scientists and researchers...",
-    img: "https://via.placeholder.com/120",
-    name: "Dr. LMN",
-    role: "Co-Convener",
-  },
-];
 export const facultyData = [
   {
     role: "Patron",
@@ -79,12 +57,13 @@ export const facultyData = [
     role: "Conveners",
     members: [
       { name: "Prof. Satyendra Singh, SCNS, JNU", src: satendraImg },
-      { name: "Dr. Pankaj Thakur, SCNS, JNU", src: pankajImg },
+      { name: "Prof. Pankaj Thakur, SCNS, JNU", src: pankajImg },
     ],
   },
   {
     role: "Organizing Secretaries",
     members: [
+      { name: "Prof. KK Naik, SCNS, JNU", src: kkImg },
       { name: "Dr. Prakash Kanoo, SCNS, JNU", src: prakashImg },
       { name: "Dr. Sandeep Kumar, SCNS, JNU", src: sandeepImg },
       { name: "Dr. Balaji Birajdar, SCNS, JNU", src: balajiImg },
@@ -97,7 +76,7 @@ export const facultyData = [
   {
     role: "Treasurer",
     members: [
-      { name: "Dr. Pankaj Thakur, SCNS, JNU", src: pankajImg },
+      { name: "Prof. Pankaj Thakur, SCNS, JNU", src: pankajImg },
       { name: "Dr. Prakash Kanoo, SCNS, JNU", src: prakashImg },
     ],
   },
@@ -105,10 +84,10 @@ export const facultyData = [
 
 export const impDates = [
     { event: "Abstract Submission Starts", date: "1st September 2025" },
-    { event: "Abstract Submission Deadline (Extended)", date: "18th November 2025"},
-    { event: "Notification of Abstract Acceptance / Rejection", date: "19th November 2025" },
+    { event: "Abstract Submission Deadline (Extended)", date: "5th December 2025"},
+    { event: "Notification of Abstract Acceptance / Rejection", date: "5th December 2025" },
     // { event: "Last Date of Early Bird Registration and Full Paper Submission", date: "15th October 2025" },
-    { event: "Last Date of Registration", date: "22nd November 2025" },
+    { event: "Last Date of Registration", date: "6th December 2025" },
     // { event: "Camera Ready Full Paper Submission Deadline", date: "15th November 2025" },
     { event: "Conference Dates", date: "20th-21st December 2025" },
 ];

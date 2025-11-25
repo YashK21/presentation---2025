@@ -26,7 +26,7 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="flex flex-col justify-center text-gray-800">
             <h3 className="text-xl font-semibold mb-1">Prof. Satyendra Singh</h3>
-            <h3 className="text-xl font-semibold mb-3">Dr. Pankaj Thakur</h3>
+            <h3 className="text-xl font-semibold mb-3">Prof. Pankaj Thakur</h3>
 
             <p className="text-gray-700 mb-3">
               <span className="font-medium">Conference Convener, ICRANN-2025</span>
