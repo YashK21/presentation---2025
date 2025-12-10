@@ -16,6 +16,7 @@ import Speaker from "./comp/Speaker/Speaker";
 import Contact from "./comp/Contact/Contact";
 import Gallery from "./comp/Gallery/Gallery.jsx";
 import Accomodations from "./comp/Accomodations/Accomodations.jsx";
+import RF from "./comp/ResearchFacility/RF.jsx";
 function App() {
   return (
     <>
@@ -32,7 +33,8 @@ function App() {
         <Route path="/terms" element={<TOU />} />
         <Route path="/privacy-policy" element={<PP />} />
         <Route path="/refund-policy" element={<RP />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/research-facility" element={<RF />} />
+        <Route path="/gallery" element={<Gallery/>} />
         <Route path="/accomodations" element={<Accomodations />} />
       </Routes>
 

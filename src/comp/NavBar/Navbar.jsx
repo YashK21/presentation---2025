@@ -81,8 +81,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/gallery" className="hover:text-yellow-300 transition-colors">
+            <Link to="/research-facility" className="hover:text-yellow-300 transition-colors">
               Research Facilities
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" className="hover:text-yellow-300 transition-colors">
+              Gallery
             </Link>
           </li>
           <li>
@@ -138,8 +143,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="block hover:text-yellow-300 transition-colors" onClick={() => setIsOpen(false)}>
+              <Link to="/research-facility" className="block hover:text-yellow-300 transition-colors" onClick={() => setIsOpen(false)}>
                 Research Facilities
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" className="block hover:text-yellow-300 transition-colors" onClick={() => setIsOpen(false)}>
+                Gallery
               </Link>
             </li>
             <li>

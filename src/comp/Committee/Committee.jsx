@@ -57,7 +57,7 @@ const Committee = () => {
             "Prof. Arvind Kumar, NIT Kurushetra",
             "Prof. Santanu Dwari, IIT Dhanbad",
             "Dr. Rajesh Kumar, IIIT Dharwad",
-            "Dr. PK Mruduli,IIT Delhi",
+            "Prof. Dr. PK Mruduli,IIT Delhi",
             "Dr. Ravi Kant, ZHDC, University of Delhi",
           ].map((member, idx) => (
             <p key={idx}>• {member}</p>
