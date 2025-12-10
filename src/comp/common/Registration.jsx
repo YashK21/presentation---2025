@@ -4,35 +4,56 @@ import {
   sponsorshipOptions,
 } from "../../constant/data";
 
-
 const Registration = () => {
   const regularFees = registrationFee.filter((item) => item.type === "regular");
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
       {/* ---------- PAGE TITLE ---------- */}
       <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-600 mb-10">
         Registration Details
       </h1>
-{/* ===== FLASH / SCROLLING UPDATES ===== */}
-<div className="w-full mb-10">
-  <marquee className="text-red-600 font-semibold text-sm md:text-base">
-    Tentative Program Schedule Released — Download PDF | PPT Template & Poster Template for Presenters are Now Available!
-  </marquee>
+      {/* ===== FLASH / SCROLLING UPDATES ===== */}
+      <div className="w-full mb-10">
+        <marquee className="text-red-600 font-semibold text-sm md:text-base">
+          Tentative Program Schedule Released —
+          <a
+            href="/files/Tentative Program Schedule.pdf"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Download Program Schedule
+          </a>
+          | PPT Template & Poster Template for Presenters —
+          <a
+            href="/files/ICRANN-25_ppt_format.pptx"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            PPT Template
+          </a>
+          |
+          <a
+            href="/files/ICRANN-25_poster_format.pptx"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Poster Template
+          </a>
+        </marquee>
 
-  <div className="flex flex-wrap justify-center gap-4 mt-3 text-blue-700 underline font-medium">
-    <a href="/files/Tentative Program Schedule.pdf" target="_blank">
-      Program Schedule PDF
-    </a>
-    <a href="/files/ICRANN-25_ppt_format.pptx" target="_blank">
-      PPT Template
-    </a>
-    <a href="/files/ICRANN-25_poster_format.pptx" target="_blank">
-      Poster Template
-    </a>
-  </div>
-</div>
+        <div className="flex flex-wrap justify-center gap-4 mt-3 text-blue-700 underline font-medium">
+          <a href="/files/Tentative Program Schedule.pdf" target="_blank">
+            Program Schedule PDF
+          </a>
+          <a href="/files/ICRANN-25_ppt_format.pptx" target="_blank">
+            PPT Template
+          </a>
+          <a href="/files/ICRANN-25_poster_format.pptx" target="_blank">
+            Poster Template
+          </a>
+        </div>
+      </div>
 
       {/* ---------- REGULAR FEES ---------- */}
       <section className="mb-12">
@@ -46,15 +67,23 @@ const Registration = () => {
               <tr>
                 <th className="px-4 md:px-6 py-3 text-left">Category</th>
                 <th className="px-4 md:px-6 py-3 text-center">Indian (INR)</th>
-                <th className="px-4 md:px-6 py-3 text-center">International (USD)</th>
+                <th className="px-4 md:px-6 py-3 text-center">
+                  International (USD)
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {regularFees.map((row, idx) => (
                 <tr key={idx} className="hover:bg-gray-50 transition">
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{row.category}</td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium">{row.Indian}</td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium">{row.International}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {row.category}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium">
+                    {row.Indian}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium">
+                    {row.International}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -65,7 +94,8 @@ const Registration = () => {
       {/* ---------- IMPORTANT NOTE ---------- */}
       <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-12 rounded-lg shadow-sm">
         <p className="text-gray-800 font-medium text-sm sm:text-base">
-          ⚠️ <strong>Important:</strong> Registration fee <strong>does not</strong> include Travel and Accommodation.
+          ⚠️ <strong>Important:</strong> Registration fee{" "}
+          <strong>does not</strong> include Travel and Accommodation.
         </p>
       </div>
 
@@ -86,8 +116,12 @@ const Registration = () => {
             <tbody className="divide-y divide-gray-200">
               {sponsorshipOptions.map((item, idx) => (
                 <tr key={idx} className="hover:bg-gray-50 transition">
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{item.category}</td>
-                  <td className="px-4 md:px-6 py-3 text-center font-medium">{item.price}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.category}
+                  </td>
+                  <td className="px-4 md:px-6 py-3 text-center font-medium">
+                    {item.price}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -95,14 +129,20 @@ const Registration = () => {
         </div>
 
         <p className="text-gray-700 text-sm mt-4 leading-relaxed">
-          <strong>Note:</strong> For students, a scanned copy of current ID is required.
-          All foreign delegates/students must fill the International Travel Information Form with passport details.
-          A one/two-page resume must also be submitted.
-          <br /><br />
-          <strong>Refund Policy:</strong> Registration and accommodation fees are non-refundable.
-          <br /><br />
+          <strong>Note:</strong> For students, a scanned copy of current ID is
+          required. All foreign delegates/students must fill the International
+          Travel Information Form with passport details. A one/two-page resume
+          must also be submitted.
+          <br />
+          <br />
+          <strong>Refund Policy:</strong> Registration and accommodation fees
+          are non-refundable.
+          <br />
+          <br />
           <strong>Payment Mode:</strong> NEFT/Credit/Debit Card.{" "}
-          <span className="font-semibold text-red-600">DDs are not accepted.</span>
+          <span className="font-semibold text-red-600">
+            DDs are not accepted.
+          </span>
         </p>
       </section>
 
@@ -123,11 +163,16 @@ const Registration = () => {
             <tbody className="divide-y divide-gray-200">
               {impDates.map((item, idx) => (
                 <tr key={idx} className="hover:bg-gray-50 transition">
-                  <td className="px-4 md:px-6 py-3 text-gray-700">{item.event}</td>
+                  <td className="px-4 md:px-6 py-3 text-gray-700">
+                    {item.event}
+                  </td>
                   <td
                     className="px-4 md:px-6 py-3 text-center font-medium"
                     dangerouslySetInnerHTML={{
-                      __html: item.date.replace(/(\d+)(st|nd|rd|th)/g, "$1<sup>$2</sup>")
+                      __html: item.date.replace(
+                        /(\d+)(st|nd|rd|th)/g,
+                        "$1<sup>$2</sup>"
+                      ),
                     }}
                   />
                 </tr>
@@ -143,8 +188,13 @@ const Registration = () => {
           Additional Paper Charges
         </h2>
         <ul className="list-disc pl-5 text-gray-700 text-sm sm:text-base space-y-2">
-          <li><strong>Indian Participants:</strong> ₹3000 per additional paper</li>
-          <li><strong>International Participants:</strong> $100 per additional paper</li>
+          <li>
+            <strong>Indian Participants:</strong> ₹3000 per additional paper
+          </li>
+          <li>
+            <strong>International Participants:</strong> $100 per additional
+            paper
+          </li>
         </ul>
       </div>
 
@@ -155,18 +205,31 @@ const Registration = () => {
         </h2>
 
         <p className="text-gray-700 mb-4">
-          Participation fees will be accepted only through <strong>e-transfer / RTGS / NEFT</strong>.
+          Participation fees will be accepted only through{" "}
+          <strong>e-transfer / RTGS / NEFT</strong>.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <p><strong>Bank Account No.:</strong> 35404650496</p>
-            <p><strong>Bank Address:</strong> State Bank of India, New Campus Branch, New Delhi-110067</p>
-            <p><strong>Beneficiary Name:</strong> JNU Sponsored Seminar & Conference</p>
+            <p>
+              <strong>Bank Account No.:</strong> 35404650496
+            </p>
+            <p>
+              <strong>Bank Address:</strong> State Bank of India, New Campus
+              Branch, New Delhi-110067
+            </p>
+            <p>
+              <strong>Beneficiary Name:</strong> JNU Sponsored Seminar &
+              Conference
+            </p>
           </div>
           <div className="space-y-2">
-            <p><strong>IFSC Code:</strong> SBIN0010441</p>
-            <p><strong>MICR Code:</strong> 110002428</p>
+            <p>
+              <strong>IFSC Code:</strong> SBIN0010441
+            </p>
+            <p>
+              <strong>MICR Code:</strong> 110002428
+            </p>
           </div>
         </div>
       </div>
@@ -183,7 +246,6 @@ const Registration = () => {
           </button>
         </a>
       </div>
-
     </div>
   );
 };

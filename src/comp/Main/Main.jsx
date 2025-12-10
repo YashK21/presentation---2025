@@ -10,6 +10,7 @@ const Main = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* ===== Top Info & Register Button ===== */}
+
       <div className="flex flex-col md:flex-row items-center justify-center text-center gap-4 md:gap-6 px-4 py-6">
         <p className="text-xs md:text-base font-medium text-gray-800">
           <span className="text-sm md:text-base font-semibold">
@@ -26,6 +27,34 @@ const Main = () => {
         >
           Register Now
         </button>
+      </div>
+      <div className="w-full mb-10">
+        <marquee className="text-red-600 font-semibold text-sm md:text-base">
+          Tentative Program Schedule Released —
+          <a
+            href="/files/Tentative Program Schedule.pdf"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Download Program Schedule
+          </a>
+          | PPT Template & Poster Template for Presenters —
+          <a
+            href="/files/ICRANN-25_ppt_format.pptx"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            PPT Template
+          </a>
+          |
+          <a
+            href="/files/ICRANN-25_poster_format.pptx"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Poster Template
+          </a>
+        </marquee>
       </div>
 
       {/* Divider */}
