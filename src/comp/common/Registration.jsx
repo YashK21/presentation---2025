@@ -4,6 +4,7 @@ import {
   sponsorshipOptions,
 } from "../../constant/data";
 
+
 const Registration = () => {
   const regularFees = registrationFee.filter((item) => item.type === "regular");
 
@@ -14,6 +15,24 @@ const Registration = () => {
       <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-600 mb-10">
         Registration Details
       </h1>
+{/* ===== FLASH / SCROLLING UPDATES ===== */}
+<div className="w-full mb-10">
+  <marquee className="text-red-600 font-semibold text-sm md:text-base">
+    Tentative Program Schedule Released — Download PDF | PPT Template & Poster Template for Presenters are Now Available!
+  </marquee>
+
+  <div className="flex flex-wrap justify-center gap-4 mt-3 text-blue-700 underline font-medium">
+    <a href="/files/Tentative Program Schedule.pdf" target="_blank">
+      Program Schedule PDF
+    </a>
+    <a href="/files/ICRANN-25_ppt_format.pptx" target="_blank">
+      PPT Template
+    </a>
+    <a href="/files/ICRANN-25_poster_format.pptx" target="_blank">
+      Poster Template
+    </a>
+  </div>
+</div>
 
       {/* ---------- REGULAR FEES ---------- */}
       <section className="mb-12">
