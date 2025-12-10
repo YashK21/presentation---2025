@@ -12,13 +12,18 @@ const Header = () => {
       {/* Top Banner */}
       <div className="relative w-full bg-blue-400 flex flex-col items-center px-4 py-6 lg:py-10">
         {/* ==================== MOBILE: LOGO FIRST ==================== */}
-       <img
+        <img
   src={jnuLogo}
   alt="JNU Logo"
   style={{ mixBlendMode: "multiply" }}
   className="
-    h-32 w-32 sm:h-36 sm:w-36 object-contain mb-4
-    lg:absolute lg:left-4 lg:top-6 lg:h-40 lg:w-40 lg:mb-0
+    h-32 w-32                      /* Mobile */
+    sm:h-36 sm:w-36                /* Small devices */
+    lg:absolute lg:left-4 lg:top-6
+    lg:h-48 lg:w-48                /* Large screens */
+    xl:h-56 xl:w-56                /* XL screens */
+    2xl:h-64 2xl:w-64              /* 2K/ large desktop */
+    object-contain mb-4 lg:mb-0
   "
 />
 
