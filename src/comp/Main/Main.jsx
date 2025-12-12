@@ -32,6 +32,13 @@ const Main = () => {
         <marquee className="text-red-600 font-semibold text-sm md:text-base">
           Tentative Program Schedule Released —
           <a
+            href="/files/Tentative Technical Schedule.pdf"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Download Technical Schedule
+          </a>
+          <a
             href="/files/Tentative Program Schedule.pdf"
             target="_blank"
             className="text-blue-800 underline mx-1"

@@ -18,6 +18,13 @@ const Registration = () => {
         <marquee className="text-red-600 font-semibold text-sm md:text-base">
           Tentative Program Schedule Released —
           <a
+            href="/files/Tentative Technical Schedule.pdf"
+            target="_blank"
+            className="text-blue-800 underline mx-1"
+          >
+            Download Technical Schedule
+          </a>
+          <a
             href="/files/Tentative Program Schedule.pdf"
             target="_blank"
             className="text-blue-800 underline mx-1"
@@ -43,6 +50,9 @@ const Registration = () => {
         </marquee>
 
         <div className="flex flex-wrap justify-center gap-4 mt-3 text-blue-700 underline font-medium">
+          <a href="/files/Tentative Technical Schedule.pdf" target="_blank">
+            Download Technical Schedule
+          </a>
           <a href="/files/Tentative Program Schedule.pdf" target="_blank">
             Program Schedule PDF
           </a>
