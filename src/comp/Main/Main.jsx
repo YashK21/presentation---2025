@@ -1,8 +1,10 @@
 import banner from "../../constant/img/banner.png";
 import { facultyData } from "../../constant/data";
 import { useNavigate } from "react-router-dom";
+
 const Main = () => {
   const navigate = useNavigate();
+
   const handleNaivgate = () => {
     navigate("/registration");
   };
@@ -10,7 +12,6 @@ const Main = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* ===== Top Info & Register Button ===== */}
-
       <div className="flex flex-col md:flex-row items-center justify-center text-center gap-4 md:gap-6 px-4 py-6">
         <p className="text-xs md:text-base font-medium text-gray-800">
           <span className="text-sm md:text-base font-semibold">
@@ -28,6 +29,20 @@ const Main = () => {
           Register Now
         </button>
       </div>
+
+      {/* ===== Invitation PDF Link (NEW) ===== */}
+      <div className="w-full bg-blue-50 py-3 px-4 text-center">
+        <a
+          href="/files/Invitation_ICRANN-2025_Final.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-blue-700 font-semibold text-sm md:text-base hover:underline"
+        >
+          📄 Download Official Invitation – ICRANN-2025
+        </a>
+      </div>
+
+      {/* ===== Marquee Section ===== */}
       <div className="w-full mb-10">
         <marquee className="text-red-600 font-semibold text-sm md:text-base">
           Tentative Program Schedule Released —
@@ -94,11 +109,6 @@ const Main = () => {
             [Co-Researcher of Prof. Grünberg - Nobel Laureate Physics 2007]
           </p>
         </div>
-        {/* <img
-          src="https://via.placeholder.com/120"
-          alt="Prof"
-          className="rounded-lg w-28 h-28 object-cover"
-        /> */}
       </div>
 
       {/* ===== Announcements Section ===== */}
@@ -119,28 +129,23 @@ const Main = () => {
       {/* ===== Committee Section ===== */}
       <section className="py-10 px-4 md:px-12 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          {/* Heading */}
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10 text-center">
             Organizing Committee
           </h2>
 
-          {/* Faculty Roles */}
           <div className="space-y-12">
             {facultyData.map((group, idx) => (
               <div key={idx}>
-                {/* Role Heading */}
                 <h3 className="text-xl md:text-2xl font-semibold text-gray-700 mb-6 text-center">
                   {group.role}
                 </h3>
 
-                {/* Members Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                   {group.members.map((member, mIdx) => (
                     <div
                       key={mIdx}
                       className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 flex flex-col items-center text-center"
                     >
-                      {/* Avatar */}
                       {member.src ? (
                         <img
                           src={member.src}
@@ -152,8 +157,6 @@ const Main = () => {
                           {member.name.split(" ")[1]?.[0] || member.name[0]}
                         </div>
                       )}
-
-                      {/* Member Info */}
                       <h4 className="text-lg font-semibold text-gray-800">
                         {member.name}
                       </h4>
